@@ -6,51 +6,53 @@ import PaperPlaneTilt from '../assets/svg/PaperPlaneTilt.astro';
 import MagnifyingGlass from '../assets/svg/MagnifyingGlass.astro';
 ---
 
-<header class="absolute inset-0 w-fit p-4 h-fit backdrop-blur">
-    <div class="flex items-center top-0 h-screen sticky">
-        <div class="p-1.5 border rounded-full bg-primary border-primary-lighter space-y-2 shadow">
-            <a href="/"
-               class="flex p-2 rounded-full hover:bg-primary-lighter hover:cursor-pointer transition-colors duration-100"
-            >
-                <House
-                    width="16"
-                    height="16"
-                    fill="#ABABAB"
-                />
-            </a>
-            <a href="/projects"
-               class="flex p-2 rounded-full hover:bg-primary-lighter hover:cursor-pointer transition-colors duration-100"
-            >
-                <Code
-                    width="16"
-                    height="16"
-                    fill="#ABABAB"
-                />
-            </a>
-            <a href="/stack"
-               class="flex p-2 rounded-full hover:bg-primary-lighter hover:cursor-pointer transition-colors duration-100"
-            >
-                <Stack
-                    width="16"
-                    height="16"
-                    fill="#ABABAB"
-                />
-            </a>
-            <a href="/contact"
-               class="flex p-2 rounded-full hover:bg-primary-lighter hover:cursor-pointer transition-colors duration-100"
-            >
-                <PaperPlaneTilt
-                    width="16"
-                    height="16"
-                    fill="#ABABAB"
-                />
-            </a>
-            <div class="flex p-2 rounded-full hover:bg-primary-lighter hover:cursor-pointer transition-colors duration-100">
-                <MagnifyingGlass
-                    width="16"
-                    height="16"
-                    fill="#ABABAB"
-                />
+<header class="sticky w-fit inset-0">
+    <div class="absolute p-4">
+        <div class="flex items-center h-screen">
+            <div class="p-1.5 border rounded-full bg-primary border-primary-lighter space-y-2 shadow">
+                <a href="/"
+                   class="flex p-2 rounded-full hover:bg-primary-lighter hover:cursor-pointer transition-colors duration-100"
+                >
+                    <House
+                        width="16"
+                        height="16"
+                        fill="#ABABAB"
+                    />
+                </a>
+                <a href="/projects"
+                   class="flex p-2 rounded-full hover:bg-primary-lighter hover:cursor-pointer transition-colors duration-100"
+                >
+                    <Code
+                        width="16"
+                        height="16"
+                        fill="#ABABAB"
+                    />
+                </a>
+                <a href="/stack"
+                   class="flex p-2 rounded-full hover:bg-primary-lighter hover:cursor-pointer transition-colors duration-100"
+                >
+                    <Stack
+                        width="16"
+                        height="16"
+                        fill="#ABABAB"
+                    />
+                </a>
+                <a href="/contact"
+                   class="flex p-2 rounded-full hover:bg-primary-lighter hover:cursor-pointer transition-colors duration-100"
+                >
+                    <PaperPlaneTilt
+                        width="16"
+                        height="16"
+                        fill="#ABABAB"
+                    />
+                </a>
+                <div class="flex p-2 rounded-full hover:bg-primary-lighter hover:cursor-pointer transition-colors duration-100">
+                    <MagnifyingGlass
+                        width="16"
+                        height="16"
+                        fill="#ABABAB"
+                    />
+                </div>
             </div>
         </div>
     </div>
