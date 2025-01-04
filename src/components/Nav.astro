@@ -1,0 +1,59 @@
+---
+import House from '../assets/svg/House.astro';
+import Code from '../assets/svg/Code.astro';
+import Stack from '../assets/svg/Stack.astro';
+import PaperPlaneTilt from '../assets/svg/PaperPlaneTilt.astro';
+import MagnifyingGlass from '../assets/svg/MagnifyingGlass.astro';
+---
+
+<header class="sticky w-fit inset-0">
+    <div class="absolute p-4">
+        <div class="flex items-center h-screen">
+            <div class="p-1.5 border rounded-full bg-primary border-primary-lighter space-y-2 shadow">
+                <a href="/"
+                   class="flex p-2 rounded-full hover:bg-primary-lighter hover:cursor-pointer transition-colors duration-100"
+                >
+                    <House
+                        width="16"
+                        height="16"
+                        fill="#ABABAB"
+                    />
+                </a>
+                <a href="/projects"
+                   class="flex p-2 rounded-full hover:bg-primary-lighter hover:cursor-pointer transition-colors duration-100"
+                >
+                    <Code
+                        width="16"
+                        height="16"
+                        fill="#ABABAB"
+                    />
+                </a>
+                <a href="/stack"
+                   class="flex p-2 rounded-full hover:bg-primary-lighter hover:cursor-pointer transition-colors duration-100"
+                >
+                    <Stack
+                        width="16"
+                        height="16"
+                        fill="#ABABAB"
+                    />
+                </a>
+                <a href="/contact"
+                   class="flex p-2 rounded-full hover:bg-primary-lighter hover:cursor-pointer transition-colors duration-100"
+                >
+                    <PaperPlaneTilt
+                        width="16"
+                        height="16"
+                        fill="#ABABAB"
+                    />
+                </a>
+                <div class="flex p-2 rounded-full hover:bg-primary-lighter hover:cursor-pointer transition-colors duration-100">
+                    <MagnifyingGlass
+                        width="16"
+                        height="16"
+                        fill="#ABABAB"
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
