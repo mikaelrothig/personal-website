@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        @apply font-inter;
+    }
+
+    h1 {
+        @apply pb-4 text-2xl font-medium text-text-primary;
+    }
+
+    p {
+        @apply pb-2 text-text-secondary;
+    }
+}

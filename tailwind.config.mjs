@@ -1,3 +1,5 @@
+import defaultTheme from 'tailwindcss/defaultTheme'
+
 /** @type {import('tailwindcss').Config} */
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
@@ -10,6 +12,9 @@ export default {
 				'text-primary': '#FAFAFA',
 				'text-secondary': '#ABABAB',
 			},
+		},
+		fontFamily: {
+			inter: ['Inter Variable', ...defaultTheme.fontFamily.sans],
 		},
 	},
 	plugins: [],
