@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Button from '../components/Button.astro';
+import Copy from "../assets/svg/Copy.astro";
 ---
 
 <Layout title="Mikael Röthig | Home">
@@ -11,4 +13,12 @@ import Layout from '../layouts/Layout.astro';
         Lorem ipsum odor amet, consectetuer adipiscing elit. Semper nisi posuere tristique; adipiscing lacus
         cursus. Urna tellus nullam accumsan facilisis vestibulum lacinia morbi.
     </p>
+
+    <div class="flex gap-x-2 pt-4">
+        <Button href="/" label="About me"/>
+
+        <Button href="/" label="Email">
+            <Copy fill="#ABABAB" height="16" width="16"/>
+        </Button>
+    </div>
 </Layout>
