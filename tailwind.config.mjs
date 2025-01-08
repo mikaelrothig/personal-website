@@ -8,10 +8,11 @@ export default {
 			colors: {
 				'primary': '#1a1a1a',
 				'primary-lighter': '#272727',
+				'primary-lighter-hover': '#414141',
 				'primary-darker': '#171717',
 				'text-primary': '#FAFAFA',
 				'text-secondary': '#ABABAB',
-			},
+			}
 		},
 		fontFamily: {
 			inter: ['Inter Variable', ...defaultTheme.fontFamily.sans],
