@@ -1,0 +1,36 @@
+---
+import ArrowUpRight from "../assets/svg/ArrowUpRight.astro";
+import Tag from "../components/Tag.astro";
+---
+
+<div class="space-y-4">
+    <h2>Experience</h2>
+
+    <!--PositiveDigits-->
+    <a href="https://positivedigits.com/" class="grid grid-cols-8 px-6 py-4 gap-x-6 rounded-lg hover:bg-primary-lighter/50 transition-colors duration-200 group">
+        <div class="col-span-2">
+            <span class="text-xs text-text-secondary font-semibold">APR 2023 - SEP 2024</span>
+        </div>
+        <div class="col-span-6 space-y-4">
+            <div class="flex gap-x-1 items-center font-medium group-hover:text-cyan-300">
+                Junior Web Developer ・ PositiveDigits
+                <div class="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">
+                    <ArrowUpRight height="16" width="16" tailwindAttr="fill-text-primary group-hover:fill-cyan-300"/>
+                </div>
+            </div>
+            <p class="text-sm text-text-secondary">
+                Lorem ipsum odor amet, consectetuer adipiscing elit. Semper nisi posuere tristique; adipiscing lacus
+                cursus. Urna tellus nullam accumsan facilisis vestibulum lacinia morbi.
+            </p>
+            <div class="flex flex-wrap gap-2">
+                <Tag label="HTML"/>
+
+                <Tag label="PHP"/>
+                <Tag label="Typescript"/>
+                <Tag label="Tailwind CSS"/>
+                <Tag label="Adobe XD"/>
+                <Tag label="Adobe Illustrator"/>
+            </div>
+        </div>
+    </a>
+</div>

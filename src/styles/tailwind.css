@@ -11,7 +11,15 @@
         @apply pb-4 text-2xl font-medium text-text-primary;
     }
 
+    h2 {
+        @apply font-medium text-text-primary uppercase;
+    }
+
     p {
-        @apply pb-2 text-text-secondary;
+        @apply text-text-secondary;
+    }
+
+    a {
+        @apply text-text-primary;
     }
 }
