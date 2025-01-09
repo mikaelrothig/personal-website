@@ -1,24 +1,29 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Button from '../components/Button.astro';
-import Copy from "../assets/svg/Copy.astro";
+import Copy from "../assets/icons/Copy.astro";
+import Experience from "../components/Experience.astro";
 ---
 
 <Layout title="Mikael Röthig | Home">
-    <h1>
-        Howzit. I'm Mikael Röthig.<br>
-        <span class="text-text-secondary">Software Developer from</span> Cape Town<br>
-    </h1>
-    <p>
-        Lorem ipsum odor amet, consectetuer adipiscing elit. Semper nisi posuere tristique; adipiscing lacus
-        cursus. Urna tellus nullam accumsan facilisis vestibulum lacinia morbi.
-    </p>
+    <div>
+        <h1>
+            Howzit. I'm Mikael Röthig.<br>
+            <span class="text-text-secondary">Software Developer from</span> Cape Town<br>
+        </h1>
+        <p class="text-sm">
+            Lorem ipsum odor amet, consectetuer adipiscing elit. Semper nisi posuere tristique; adipiscing lacus
+            cursus. Urna tellus nullam accumsan facilisis vestibulum lacinia morbi.
+        </p>
 
-    <div class="flex gap-x-2 pt-4">
-        <Button href="/" label="About me"/>
+        <div class="flex gap-x-2 pt-4">
+            <Button href="/" label="About me"/>
 
-        <Button href="/" label="Email">
-            <Copy fill="#ABABAB" height="16" width="16"/>
-        </Button>
+            <Button href="/" label="Email">
+                <Copy height="16" width="16" tailwindAttr="fill-text-secondary"/>
+            </Button>
+        </div>
     </div>
+
+    <Experience />
 </Layout>

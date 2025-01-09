@@ -24,12 +24,10 @@ import Footer from '../components/Footer.astro';
 	<body class="relative bg-primary-darker">
 		<Nav />
 
-		<main class="w-[480px] pt-40 min-h-screen mx-auto">
+		<main class="w-[640px] pt-40 min-h-screen mx-auto space-y-8">
 			<slot />
 
-			<div class="pt-8">
-				<Footer />
-			</div>
+			<Footer />
 		</main>
 	</body>
 </html>
