@@ -7,26 +7,32 @@ import Tag from "../components/Tag.astro";
     <h2>Experience</h2>
 
     <!--PositiveDigits-->
-    <a href="https://positivedigits.com/" class="grid grid-cols-8 px-6 py-4 gap-x-6 rounded-lg hover:bg-primary-lighter/50 transition-colors duration-200 group">
-        <div class="col-span-2">
+    <a href="https://positivedigits.com/" target=”_blank” class="grid md:grid-cols-8 px-6 py-4 gap-x-6 rounded-lg hover:bg-primary-lighter/50 transition-colors duration-200 group">
+        <div class="md:col-span-2 pb-2">
             <span class="text-xs text-text-secondary font-semibold">APR 2023 - SEP 2024</span>
         </div>
-        <div class="col-span-6 space-y-4">
-            <div class="flex gap-x-1 items-center font-medium group-hover:text-teal-300">
-                Junior Web Developer ・ PositiveDigits
-                <div class="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">
-                    <ArrowUpRight height="16" width="16" tailwindAttr="fill-text-primary group-hover:fill-teal-300"/>
-                </div>
+        <div class="md:col-span-6 space-y-2">
+            <div class="flex flex-wrap font-medium group-hover:text-teal-300">
+                <span>
+                    Junior Web Developer
+                </span>
+                <span>
+                    ・
+                </span>
+                <span class="flex gap-x-1 items-center">
+                    PositiveDigits
+                    <ArrowUpRight height="16" width="16" tailwindAttr="fill-text-primary group-hover:fill-teal-300 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"/>
+                </span>
             </div>
-            <p class="text-sm text-text-secondary">
+            <p class="flex text-sm text-text-secondary">
                 Lorem ipsum odor amet, consectetuer adipiscing elit. Semper nisi posuere tristique; adipiscing lacus
                 cursus. Urna tellus nullam accumsan facilisis vestibulum lacinia morbi.
             </p>
             <div class="flex flex-wrap gap-2">
-                <Tag label="HTML"/>
                 <Tag label="PHP"/>
-                <Tag label="Typescript"/>
+                <Tag label="HTML"/>
                 <Tag label="Tailwind CSS"/>
+                <Tag label="Typescript"/>
                 <Tag label="Adobe XD"/>
                 <Tag label="Adobe Illustrator"/>
             </div>
