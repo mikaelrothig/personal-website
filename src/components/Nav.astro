@@ -3,7 +3,7 @@ import House from '../assets/icons/House.astro';
 import Code from '../assets/icons/Code.astro';
 import Stack from '../assets/icons/Stack.astro';
 import PaperPlaneTilt from '../assets/icons/PaperPlaneTilt.astro';
-import MagnifyingGlass from '../assets/icons/MagnifyingGlass.astro';
+import Briefcase from "../assets/icons/Briefcase.astro";
 ---
 
 <header class="sticky w-fit inset-0">
@@ -17,6 +17,15 @@ import MagnifyingGlass from '../assets/icons/MagnifyingGlass.astro';
                         width="16"
                         height="16"
                         tailwindAttr="fill-text-secondary"
+                    />
+                </a>
+                <a href="/experience"
+                   class="flex p-2 rounded-full hover:bg-primary-lighter transition-colors duration-200"
+                >
+                    <Briefcase
+                            width="16"
+                            height="16"
+                            tailwindAttr="fill-text-secondary"
                     />
                 </a>
                 <a href="/projects"
@@ -46,13 +55,6 @@ import MagnifyingGlass from '../assets/icons/MagnifyingGlass.astro';
                         tailwindAttr="fill-text-secondary"
                     />
                 </a>
-                <div class="flex p-2 rounded-full hover:bg-primary-lighter hover:cursor-pointer transition-colors duration-200">
-                    <MagnifyingGlass
-                        width="16"
-                        height="16"
-                        tailwindAttr="fill-text-secondary"
-                    />
-                </div>
             </div>
         </div>
     </div>
