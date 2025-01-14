@@ -1,0 +1,22 @@
+---
+import PlainLayout from "../layouts/PlainLayout.astro";
+import Envelope from "../assets/icons/CheckCircle.astro";
+---
+
+<PlainLayout title="Mikael Röthig | Contact">
+    <div class="space-y-24 text-center">
+        <div>
+            <div class="flex justify-center pb-2">
+                <Envelope height="128" width="128" tailwindAttr="fill-text-primary"/>
+            </div>
+
+            <h1 class="flex justify-center">Thanks for submitting!</h1>
+            <p class="flex justify-center">
+                Lorem ipsum odor amet, consectetuer adipiscing elit. Ultricies nec volutpat nostra cubilia suscipit
+                convallis dictumst.
+            </p>
+        </div>
+
+        <a href="/" class="flex justify-center px-4 py-3 rounded-lg text-sm text-primary bg-text-primary hover:bg-text-secondary transition duration-200">Go Home</a>
+    </div>
+</PlainLayout>
