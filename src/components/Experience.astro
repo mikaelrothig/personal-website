@@ -1,13 +1,14 @@
 ---
 import ArrowUpRight from "../assets/icons/ArrowUpRight.astro";
 import Tag from "../components/Tag.astro";
+import CaretRight from "../assets/icons/CaretRight.astro";
 ---
 
 <div class="space-y-4">
     <h2 class="pb-2 border-b border-primary-lighter">Experience</h2>
 
     <!--PositiveDigits-->
-    <a href="https://positivedigits.com/" target=”_blank” class="grid md:grid-cols-8 px-6 py-4 gap-x-6 rounded-lg bg-primary hover:bg-primary-lighter transition-colors duration-200 group">
+    <a href="https://positivedigits.com/" target=”_blank” class="grid md:grid-cols-8 px-6 py-4 gap-x-6 rounded-lg bg-primary hover:bg-primary-lighter/50 transition-colors duration-200 group">
         <div class="md:col-span-2 pb-2">
             <span class="text-xs text-text-secondary font-semibold">APR 2023 - SEP 2024</span>
         </div>
@@ -32,10 +33,17 @@ import Tag from "../components/Tag.astro";
                 <Tag label="PHP"/>
                 <Tag label="HTML"/>
                 <Tag label="Tailwind CSS"/>
+                <Tag label="SCSS"/>
                 <Tag label="Typescript"/>
                 <Tag label="Adobe XD"/>
                 <Tag label="Adobe Illustrator"/>
+                <Tag label="Adobe Photoshop"/>
             </div>
         </div>
+    </a>
+
+    <a href="#" class="flex items-center group">
+        <p class="text-sm group-hover:text-text-primary">View Full Resume</p>
+        <CaretRight height="14" width="14" tailwindAttr="fill-text-secondary group-hover:fill-text-primary group-hover:translate-x-0.5 transition-transform duration-200"/>
     </a>
 </div>
