@@ -20,6 +20,18 @@
     }
 
     a {
+        @apply text-text-secondary;
+    }
+
+    span {
         @apply text-text-primary;
+    }
+
+    .button-primary {
+        @apply bg-accent hover:bg-accent-hover text-primary-darker;
+    }
+
+    .button-secondary {
+        @apply bg-primary-lighter hover:bg-primary-lighter-hover text-text-secondary;
     }
 }
