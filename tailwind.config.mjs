@@ -12,7 +12,7 @@ export default {
 				'primary-lighter-hover': '#22272B',
 
 				'accent': '#CBFC01',
-				'accent-hover': '#B2E300',
+				'accent-hover': '#98C900',
 
 				'text-primary': '#DEE4EA',
 				'text-secondary':'#8C9BAB',
