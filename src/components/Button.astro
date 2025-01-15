@@ -3,12 +3,13 @@ interface Props {
     href: string;
     label: string;
     color: string;
+    newTab?: boolean;
 }
 
-const { href, label, color} = Astro.props;
+const { href, label, color, newTab} = Astro.props;
 ---
 
-<a href={href} class={`${color} flex w-fit px-4 py-1.5 rounded-lg text-sm transition duration-200`}>
+<a href={href} target={newTab ? "_blank" : "_self"} class={`${color} flex w-fit px-4 py-1.5 rounded-lg text-sm transition duration-200`}>
     <div class="flex gap-2 items-center">
         <slot />
 
