@@ -1,6 +1,37 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Button from "../components/Button.astro";
+import ContactForm from "../components/ContactForm.astro";
 ---
 
 <Layout title="Mikael Röthig | Contact">
+    <div>
+        <h1>
+            Lorem ipsum odor amet,<br>
+            <span class="text-text-secondary">consectetuer adipiscing elit.<br></span>
+        </h1>
+        <p class="text-sm pb-4">
+            Nullam sagittis luctus magnis cras congue sem convallis. Posuere sociosqu fames maecenas aenean netus
+            montes.
+        </p>
+        <p class="text-sm">
+            Ad odio elit facilisi laoreet a. Efficitur lacus montes cursus luctus nibh. Enim vel elit semper vulputate
+            sollicitudin mus. Aliquam faucibus penatibus amet torquent sed iaculis maximus. Nulla varius praesent
+            bibendum nibh aliquam nisi curabitur at luctus. Ultricies iaculis tellus molestie consequat quis accumsan
+            vel. Urna purus rutrum tempor tempus dignissim massa ligula.<br><br>
+
+            Nam aliquam duis imperdiet ad, vel posuere aenean odio. Montes integer commodo taciti mattis amet finibus
+            praesent integer. Natoque vitae sodales, nibh tristique curabitur odio aliquam. Nullam sagittis luctus
+            magnis cras congue sem convallis. Posuere sociosqu fames maecenas aenean netus montes? Hac cubilia elit
+            ridiculus; erat quisque enim. Enim class cras quam parturient ridiculus dignissim laoreet.
+        </p>
+
+        <div class="flex gap-x-2 pt-4">
+            <Button href="https://www.linkedin.com/in/mikael-r%C3%B6thig-104227185/" label="LinkedIn" color="button-secondary" newTab/>
+            <Button href="https://github.com/MikaelRothig" label="Github" color="button-secondary" newTab/>
+            <Button href="https://www.instagram.com/mikaelrothig/" label="Instagram" color="button-secondary" newTab/>
+        </div>
+    </div>
+
+    <ContactForm/>
 </Layout>

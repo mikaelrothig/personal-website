@@ -4,55 +4,58 @@ import Code from '../assets/icons/Code.astro';
 import Stack from '../assets/icons/Stack.astro';
 import UserCircle from '../assets/icons/UserCircle.astro';
 import Briefcase from "../assets/icons/Briefcase.astro";
+
+const currentPage = Astro.url.pathname;
+
 ---
 
 <header class="sticky w-fit inset-0">
     <div class="absolute">
         <div class="flex p-4 items-center h-screen">
-            <div class="p-1.5 rounded-full bg-primary backdrop-blur space-y-2 shadow">
+            <div class="p-1.5 rounded-full border border-primary-lighter bg-primary backdrop-blur space-y-2 shadow">
                 <a href="/"
-                   class="flex p-2 rounded-full hover:bg-primary-lighter transition-colors duration-200"
+                   class={`flex p-2 rounded-full transition-colors duration-200 ${currentPage === '/' ? 'bg-accent' : 'hover:bg-primary-lighter'}`}
                 >
                     <House
                         width="16"
                         height="16"
-                        tailwindAttr="fill-text-secondary"
+                        tailwindAttr={`${currentPage === '/' ? 'fill-primary' : 'fill-text-secondary'}`}
                     />
                 </a>
                 <a href="/experience"
-                   class="flex p-2 rounded-full hover:bg-primary-lighter transition-colors duration-200"
+                   class={`flex p-2 rounded-full transition-colors duration-200 ${currentPage === '/experience' ? 'bg-accent' : 'hover:bg-primary-lighter'}`}
                 >
                     <Briefcase
                             width="16"
                             height="16"
-                            tailwindAttr="fill-text-secondary"
+                            tailwindAttr={`${currentPage === '/experience' ? 'fill-primary' : 'fill-text-secondary'}`}
                     />
                 </a>
                 <a href="/projects"
-                   class="flex p-2 rounded-full hover:bg-primary-lighter transition-colors duration-200"
+                   class={`flex p-2 rounded-full transition-colors duration-200 ${currentPage === '/projects' ? 'bg-accent' : 'hover:bg-primary-lighter'}`}
                 >
                     <Code
                         width="16"
                         height="16"
-                        tailwindAttr="fill-text-secondary"
+                        tailwindAttr={`${currentPage === '/projects' ? 'fill-primary' : 'fill-text-secondary'}`}
                     />
                 </a>
                 <a href="/stack"
-                   class="flex p-2 rounded-full hover:bg-primary-lighter transition-colors duration-200"
+                   class={`flex p-2 rounded-full transition-colors duration-200 ${currentPage === '/stack' ? 'bg-accent' : 'hover:bg-primary-lighter'}`}
                 >
                     <Stack
                         width="16"
                         height="16"
-                        tailwindAttr="fill-text-secondary"
+                        tailwindAttr={`${currentPage === '/stack' ? 'fill-primary' : 'fill-text-secondary'}`}
                     />
                 </a>
                 <a href="/about"
-                   class="flex p-2 rounded-full hover:bg-primary-lighter transition-colors duration-200"
+                   class={`flex p-2 rounded-full transition-colors duration-200 ${currentPage === '/about' ? 'bg-accent' : 'hover:bg-primary-lighter'}`}
                 >
                     <UserCircle
                         width="16"
                         height="16"
-                        tailwindAttr="fill-text-secondary"
+                        tailwindAttr={`${currentPage === '/about' ? 'fill-primary' : 'fill-text-secondary'}`}
                     />
                 </a>
             </div>
