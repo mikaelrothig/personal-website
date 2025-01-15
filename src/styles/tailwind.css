@@ -20,6 +20,10 @@
     }
 
     a {
+        @apply text-text-secondary;
+    }
+
+    span {
         @apply text-text-primary;
     }
 }

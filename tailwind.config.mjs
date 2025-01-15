@@ -6,12 +6,16 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				'primary': '#1a1a1a',
-				'primary-lighter': '#272727',
-				'primary-lighter-hover': '#414141',
-				'primary-darker': '#171717',
-				'text-primary': '#FAFAFA',
-				'text-secondary': '#ABABAB',
+				'primary-darker': '#101214',
+				'primary': '#161A1D',
+				'primary-lighter': '#1D2125',
+				'primary-lighter-hover': '#22272B',
+
+				'accent': '#CBFC01',
+				'accent-hover': '#B2E300',
+
+				'text-primary': '#DEE4EA',
+				'text-secondary':'#8C9BAB',
 			}
 		},
 		fontFamily: {
