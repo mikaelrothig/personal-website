@@ -9,10 +9,10 @@ const currentPage = Astro.url.pathname;
 
 ---
 
-<header class="sticky w-fit inset-0">
-    <div class="absolute">
-        <div class="flex p-4 items-center h-screen">
-            <div class="p-1.5 rounded-full border border-primary-lighter bg-primary backdrop-blur space-y-2 shadow">
+<header class="sticky inset-0">
+    <div class="absolute z-20 pointer-events-none">
+        <div class="flex p-4 justify-center md:items-center w-screen md:w-fit h-screen">
+            <div class="flex mt-auto md:mt-0 h-fit md:block p-1.5 rounded-full border border-primary-lighter bg-primary backdrop-blur space-y-0 md:space-y-2 pointer-events-auto shadow">
                 <a href="/"
                    class={`flex p-2 rounded-full transition-colors duration-200 ${currentPage === '/' ? 'bg-accent' : 'hover:bg-primary-lighter'}`}
                 >
@@ -58,6 +58,22 @@ const currentPage = Astro.url.pathname;
                         tailwindAttr={`${currentPage === '/about' ? 'fill-primary' : 'fill-text-secondary'}`}
                     />
                 </a>
+            </div>
+        </div>
+    </div>
+
+    <!--Gradient blur-->
+    <div class="flex md:hidden fixed bottom-0 left-0 right-0 pointer-events-none">
+        <div class="flex">
+            <div class="relative w-screen h-[200px] rounded-none">
+                <div class="absolute inset-0 z-10 backdrop-blur-[0.078125px] rounded-none pointer-events-none" style="mask-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 25%, rgba(0, 0, 0, 0) 37.5%);"/>
+                <div class="absolute inset-0 z-10 backdrop-blur-[0.15625px] rounded-none pointer-events-none" style="mask-image: linear-gradient(rgba(0, 0, 0, 0) 12.5%, rgb(0, 0, 0) 25%, rgb(0, 0, 0) 37.5%, rgba(0, 0, 0, 0) 50%);"/>
+                <div class="absolute inset-0 z-10 backdrop-blur-[0.3125px] rounded-none pointer-events-none" style="mask-image: linear-gradient(rgba(0, 0, 0, 0) 25%, rgb(0, 0, 0) 37.5%, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0) 62.5%);"/>
+                <div class="absolute inset-0 z-10 backdrop-blur-[0.625px] rounded-none pointer-events-none" style="mask-image: linear-gradient(rgba(0, 0, 0, 0) 37.5%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 62.5%, rgba(0, 0, 0, 0) 75%);"/>
+                <div class="absolute inset-0 z-10 backdrop-blur-[1.25px] rounded-none pointer-events-none" style="mask-image: linear-gradient(rgba(0, 0, 0, 0) 50%, rgb(0, 0, 0) 62.5%, rgb(0, 0, 0) 75%, rgba(0, 0, 0, 0) 87.5%);"/>
+                <div class="absolute inset-0 z-10 backdrop-blur-[2.5px] rounded-none pointer-events-none" style="mask-image: linear-gradient(rgba(0, 0, 0, 0) 62.5%, rgb(0, 0, 0) 75%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);"/>
+                <div class="absolute inset-0 z-10 backdrop-blur-[5px] rounded-none pointer-events-none" style="mask-image: linear-gradient(rgba(0, 0, 0, 0) 75%, rgb(0, 0, 0) 87.5%, rgb(0, 0, 0) 100%);"/>
+                <div class="absolute inset-0 z-10 backdrop-blur-[10px] rounded-none pointer-events-none" style="mask-image: linear-gradient(rgba(0, 0, 0, 0) 87.5%, rgb(0, 0, 0) 100%);"/>
             </div>
         </div>
     </div>
