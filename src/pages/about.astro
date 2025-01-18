@@ -2,6 +2,9 @@
 import Layout from '../layouts/Layout.astro';
 import Button from "../components/Button.astro";
 import ContactForm from "../components/ContactForm.astro";
+import LinkedinLogo from "../assets/icons/LinkedinLogo.astro";
+import GithubLogo from "../assets/icons/GithubLogo.astro";
+import InstagramLogo from "../assets/icons/InstagramLogo.astro";
 ---
 
 <Layout title="Mikael Röthig | Contact">
@@ -27,9 +30,15 @@ import ContactForm from "../components/ContactForm.astro";
         </p>
 
         <div class="flex gap-x-2 pt-4">
-            <Button href="https://www.linkedin.com/in/mikael-r%C3%B6thig-104227185/" label="LinkedIn" color="button-secondary" newTab/>
-            <Button href="https://github.com/MikaelRothig" label="Github" color="button-secondary" newTab/>
-            <Button href="https://www.instagram.com/mikaelrothig/" label="Instagram" color="button-secondary" newTab/>
+            <Button href="https://www.linkedin.com/in/mikael-r%C3%B6thig-104227185/" label="LinkedIn" color="button-secondary" newTab>
+                <LinkedinLogo height="16" width="16" tailwindAttr="fill-text-secondary"/>
+            </Button>
+            <Button href="https://github.com/MikaelRothig" label="Github" color="button-secondary" newTab>
+                <GithubLogo height="16" width="16" tailwindAttr="fill-text-secondary"/>
+            </Button>
+            <Button href="https://www.instagram.com/mikaelrothig/" label="Instagram" color="button-secondary" newTab>
+                <InstagramLogo height="16" width="16" tailwindAttr="fill-text-secondary"/>
+            </Button>
         </div>
     </div>
 
