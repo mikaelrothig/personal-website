@@ -3,10 +3,9 @@ import Layout from '../layouts/Layout.astro';
 import Button from '../components/Button.astro';
 import Copy from "../assets/icons/Copy.astro";
 import Experience from "../components/Experience.astro";
-import Stack from "../components/stack/Stack.astro";
+import TechStack from "../components/stack/Stack.astro";
 import ContactForm from "../components/ContactForm.astro";
 import StackEntry from "../components/stack/StackEntry.astro";
-import FigmaLogo from "../assets/logos/Figma.astro";
 import HTML from "../assets/logos/HTML.astro";
 import TailwindCSS from "../assets/logos/TailwindCSS.astro";
 import AstroJS from "../assets/logos/AstroJS.astro";
@@ -22,7 +21,7 @@ import Sulu from "../assets/logos/Sulu.astro";
             <span class="text-text-secondary">Software Developer from</span> Cape Town<br>
         </h1>
         <p class="text-sm">
-            Skilled software developer with a passion for crafting user-friendly experiences. I excel in front-end
+            I'm a skilled software developer with a passion for crafting user-friendly experiences. I excel in front-end
             development, bringing clean code and visually appealing designs to life, ensuring a seamless and engaging
             user journey across all devices.
         </p>
@@ -37,7 +36,7 @@ import Sulu from "../assets/logos/Sulu.astro";
     </div>
 
     <Experience />
-    <Stack heading="My Tech Stack" viewAllButton>
+    <TechStack heading="Stack" viewAllButton>
         <StackEntry href="https://www.php.net/" heading="PHP" subheading="Backend">
             <CSS tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
         </StackEntry>
@@ -56,6 +55,6 @@ import Sulu from "../assets/logos/Sulu.astro";
         <StackEntry href="https://tailwindcss.com/" heading="Tailwind CSS" subheading="Library">
             <TailwindCSS tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
         </StackEntry>
-    </Stack>
+    </TechStack>
     <ContactForm/>
 </Layout>
