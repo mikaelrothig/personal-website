@@ -1,6 +1,30 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import ImageCard from "../components/ImageCard.astro";
+import Tag from "../components/Tag.astro";
+
+import placeholderImage from "../../src/assets/images/placeholder-image.webp"
 ---
 
 <Layout title="Mikael Röthig | Projects">
+    <div>
+        <h1>Projects</h1>
+        <p class="text-sm pb-4">
+            Nullam sagittis luctus magnis cras congue sem convallis. Posuere sociosqu fames maecenas aenean netus
+            montes.
+        </p>
+    </div>
+
+    <ImageCard
+        href="/"
+        heading="Hexagon based terrain generator"
+        subheading="Nullam sagittis luctus magnis cras congue sem convallis. Posuere sociosqu fames maecenas aenean netus montes."
+        image={placeholderImage.src}
+        imageAlt="Placeholder Image"
+        tags
+    >
+        <Tag label="C#"/>
+        <Tag label="Unity"/>
+        <Tag label="Blender"/>
+    </ImageCard>
 </Layout>
