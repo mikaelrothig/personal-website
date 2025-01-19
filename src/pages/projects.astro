@@ -3,28 +3,43 @@ import Layout from '../layouts/Layout.astro';
 import ImageCard from "../components/ImageCard.astro";
 import Tag from "../components/Tag.astro";
 
-import placeholderImage from "../../src/assets/images/placeholder-image.webp"
+import terrainGeneratorImage from "../../src/assets/images/terrain-generator.webp"
+import personalWebsiteImage from "../../src/assets/images/personal-website.webp"
 ---
 
 <Layout title="Mikael Röthig | Projects">
     <div>
         <h1>Projects</h1>
         <p class="text-sm pb-4">
-            Nullam sagittis luctus magnis cras congue sem convallis. Posuere sociosqu fames maecenas aenean netus
-            montes.
+            Check out my side projects where I experiment with new technologies and explore my interests.
         </p>
     </div>
 
     <ImageCard
-        href="/"
-        heading="Hexagon based terrain generator"
-        subheading="Nullam sagittis luctus magnis cras congue sem convallis. Posuere sociosqu fames maecenas aenean netus montes."
-        image={placeholderImage.src}
-        imageAlt="Placeholder Image"
+        href="https://github.com/MikaelRothig/TerrainGenerator"
+        heading="Random Terrain Generator"
+        subheading="Hexagon based random terrain generator created using Unity and Blender"
+        image={terrainGeneratorImage.src}
+        imageAlt="Random Terrain Generator image"
         tags
+        newTab
     >
         <Tag label="C#"/>
         <Tag label="Unity"/>
         <Tag label="Blender"/>
+    </ImageCard>
+
+    <ImageCard
+            href="https://github.com/MikaelRothig/PortfolioWebsite"
+            heading="Personal Website"
+            subheading="Portfolio website built with Astro and Tailwind"
+            image={personalWebsiteImage.src}
+            imageAlt="Personal Website image"
+            tags
+            newTab
+    >
+        <Tag label="Astro"/>
+        <Tag label="Tailwind CSS"/>
+        <Tag label="Figma"/>
     </ImageCard>
 </Layout>

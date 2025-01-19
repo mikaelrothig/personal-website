@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import StackEntry from "../components/stack/StackEntry.astro";
-import Stack from "../components/stack/Stack.astro";
+import TechStack from "../components/stack/Stack.astro";
 
 import CSS from '../assets/logos/CSS.astro';
 import Php from '../assets/logos/Php.astro';
@@ -39,7 +39,7 @@ import CSharp from "../assets/logos/CSharp.astro";
         </p>
     </div>
 
-    <Stack heading="Programming Languages">
+    <TechStack heading="Programming Languages">
         <StackEntry href="https://www.php.net/" heading="PHP" subheading="Backend">
             <Php tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
         </StackEntry>
@@ -61,9 +61,9 @@ import CSharp from "../assets/logos/CSharp.astro";
         <StackEntry href="https://sass-lang.com/" heading="SASS" subheading="Frontend">
             <Sass tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
         </StackEntry>
-    </Stack>
+    </TechStack>
 
-    <Stack heading="Libraries & Frameworks">
+    <TechStack heading="Libraries & Frameworks">
         <StackEntry href="https://symfony.com/" heading="Symfony" subheading="Framework">
             <Symfony tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
         </StackEntry>
@@ -85,9 +85,9 @@ import CSharp from "../assets/logos/CSharp.astro";
         <StackEntry href="https://stimulus.hotwired.dev/" heading="Stimulus JS" subheading="Framework">
             <StimulusJS tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
         </StackEntry>
-    </Stack>
+    </TechStack>
 
-    <Stack heading="Tools & Software">
+    <TechStack heading="Tools & Software">
         <StackEntry href="https://git-scm.com/" heading="Git" subheading="Tool">
             <Git tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
         </StackEntry>
@@ -121,5 +121,5 @@ import CSharp from "../assets/logos/CSharp.astro";
         <StackEntry href="https://www.blender.org/" heading="Blender" subheading="Software">
             <Blender tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
         </StackEntry>
-    </Stack>
+    </TechStack>
 </Layout>
