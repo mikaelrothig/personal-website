@@ -1,6 +1,125 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import StackEntry from "../components/stack/StackEntry.astro";
+import Stack from "../components/stack/Stack.astro";
+
+import CSS from '../assets/logos/CSS.astro';
+import Php from '../assets/logos/Php.astro';
+import Typescript from '../assets/logos/Typescript.astro';
+import Javascript from '../assets/logos/Javascript.astro';
+import HTML from "../assets/logos/HTML.astro";
+import Sass from "../assets/logos/Sass.astro";
+import Git from "../assets/logos/Git.astro";
+import Github from "../assets/logos/Github.astro";
+import VSCode from "../assets/logos/VSCode.astro";
+import AdobeXD from "../assets/logos/AdobeXD.astro";
+import AdobeIllustrator from "../assets/logos/AdobeIllustrator.astro";
+import AdobePhotoshop from "../assets/logos/AdobePhotoshop.astro";
+import TailwindCSS from "../assets/logos/TailwindCSS.astro";
+import AstroJS from "../assets/logos/AstroJS.astro";
+import Figma from "../assets/logos/Figma.astro";
+import WebStorm from "../assets/logos/WebStorm.astro";
+import PhpStorm from "../assets/logos/PhpStorm.astro";
+import Unity from "../assets/logos/Unity.astro";
+import Blender from "../assets/logos/Blender.astro";
+import StimulusJS from "../assets/logos/StimulusJS.astro";
+import Hugo from "../assets/logos/Hugo.astro";
+import Symfony from "../assets/logos/Symfony.astro";
+import Shopware from "../assets/logos/Shopware.astro";
+import Sulu from "../assets/logos/Sulu.astro";
+import CSharp from "../assets/logos/CSharp.astro";
 ---
 
 <Layout title="Mikael Röthig | Stack">
+    <div>
+        <h1>Stack</h1>
+        <p class="text-sm pb-4">
+            The technologies that power my projects, including programming languages, libraries, frameworks, platforms,
+            and tools.
+        </p>
+    </div>
+
+    <Stack heading="Programming Languages">
+        <StackEntry href="https://www.php.net/" heading="PHP" subheading="Lorem ipsum">
+            <Php tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+        </StackEntry>
+        <StackEntry href="https://learn.microsoft.com/en-us/dotnet/csharp/" heading="C#" subheading="Lorem ipsum">
+            <CSharp tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+        </StackEntry>
+        <StackEntry href="https://www.typescriptlang.org/" heading="Typescript" subheading="Lorem ipsum">
+            <Typescript tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+        </StackEntry>
+        <StackEntry href="https://www.javascript.com/" heading="Javascript" subheading="Lorem ipsum">
+            <Javascript tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+        </StackEntry>
+        <StackEntry href="https://developer.mozilla.org/en-US/docs/Web/HTML" heading="HTML" subheading="Lorem ipsum">
+            <HTML tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+        </StackEntry>
+        <StackEntry href="https://developer.mozilla.org/en-US/docs/Web/CSS" heading="CSS" subheading="Lorem ipsum">
+            <CSS tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+        </StackEntry>
+        <StackEntry href="https://sass-lang.com/" heading="SASS" subheading="Lorem ipsum">
+            <Sass tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+        </StackEntry>
+    </Stack>
+
+    <Stack heading="Libraries & Frameworks">
+        <StackEntry href="https://symfony.com/" heading="Symfony" subheading="Lorem ipsum">
+            <Symfony tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+        </StackEntry>
+        <StackEntry href="https://www.shopware.com/" heading="Shopware" subheading="Lorem ipsum">
+            <Shopware tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+        </StackEntry>
+        <StackEntry href="https://sulu.io/" heading="Sulu" subheading="Lorem ipsum">
+            <Sulu tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+        </StackEntry>
+        <StackEntry href="https://gohugo.io/" heading="Hugo" subheading="Lorem ipsum">
+            <Hugo tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+        </StackEntry>
+        <StackEntry href="https://astro.build/" heading="Astro" subheading="Lorem ipsum">
+            <AstroJS tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+        </StackEntry>
+        <StackEntry href="https://tailwindcss.com/" heading="Tailwind CSS" subheading="Lorem ipsum">
+            <TailwindCSS tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+        </StackEntry>
+        <StackEntry href="https://stimulus.hotwired.dev/" heading="Stimulus JS" subheading="Lorem ipsum">
+            <StimulusJS tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+        </StackEntry>
+    </Stack>
+
+    <Stack heading="Tools & Platforms">
+        <StackEntry href="https://git-scm.com/" heading="Git" subheading="Lorem ipsum">
+            <Git tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+        </StackEntry>
+        <StackEntry href="https://github.com/" heading="Github" subheading="Lorem ipsum">
+            <Github tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+        </StackEntry>
+        <StackEntry href="https://www.jetbrains.com/webstorm/" heading="WebStorm" subheading="Lorem ipsum">
+            <WebStorm tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+        </StackEntry>
+        <StackEntry href="https://www.jetbrains.com/phpstorm/" heading="PhpStorm" subheading="Lorem ipsum">
+            <PhpStorm tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+        </StackEntry>
+        <StackEntry href="https://code.visualstudio.com/" heading="Visual Studio Code" subheading="Lorem ipsum">
+            <VSCode tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+        </StackEntry>
+        <StackEntry href="https://www.figma.com/" heading="Figma" subheading="Lorem ipsum">
+            <Figma tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+        </StackEntry>
+        <StackEntry href="https://www.adobe.com/products/xd.html" heading="Adobe XD" subheading="Lorem ipsum">
+            <AdobeXD tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+        </StackEntry>
+        <StackEntry href="https://www.adobe.com/products/illustrator.html" heading="Adobe Illustrator" subheading="Lorem ipsum">
+            <AdobeIllustrator tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+        </StackEntry>
+        <StackEntry href="https://www.adobe.com/products/photoshop.html" heading="Adobe Photoshop" subheading="Lorem ipsum">
+            <AdobePhotoshop tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+        </StackEntry>
+        <StackEntry href="https://unity.com/" heading="Unity" subheading="Lorem ipsum">
+            <Unity tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+        </StackEntry>
+        <StackEntry href="https://www.blender.org/" heading="Blender" subheading="Lorem ipsum">
+            <Blender tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+        </StackEntry>
+    </Stack>
 </Layout>

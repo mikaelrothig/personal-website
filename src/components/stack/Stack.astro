@@ -1,0 +1,25 @@
+---
+interface Props {
+    heading: string;
+    viewAllButton?: boolean;
+}
+
+const { heading, viewAllButton} = Astro.props;
+
+import CaretRight from "../../assets/icons/CaretRight.astro";
+---
+
+<div class="space-y-4">
+    <h2>{heading}</h2>
+
+    <div class="grid sm:grid-cols-2 gap-4">
+        <slot />
+    </div>
+
+    {viewAllButton && (
+        <a href="/stack" class="flex items-center group w-fit">
+            <p class="text-sm group-hover:text-accent">View All</p>
+            <CaretRight height="14" width="14" tailwindAttr="fill-text-secondary group-hover:fill-accent group-hover:translate-x-0.5 transition-transform duration-200"/>
+        </a>
+    )}
+</div>

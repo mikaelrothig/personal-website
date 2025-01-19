@@ -3,8 +3,16 @@ import Layout from '../layouts/Layout.astro';
 import Button from '../components/Button.astro';
 import Copy from "../assets/icons/Copy.astro";
 import Experience from "../components/Experience.astro";
-import Stack from "../components/Stack.astro";
+import Stack from "../components/stack/Stack.astro";
 import ContactForm from "../components/ContactForm.astro";
+import StackEntry from "../components/stack/StackEntry.astro";
+import FigmaLogo from "../assets/logos/Figma.astro";
+import HTML from "../assets/logos/HTML.astro";
+import TailwindCSS from "../assets/logos/TailwindCSS.astro";
+import AstroJS from "../assets/logos/AstroJS.astro";
+import CSS from "../assets/logos/CSS.astro";
+import CSharp from "../assets/logos/CSharp.astro";
+import Sulu from "../assets/logos/Sulu.astro";
 ---
 
 <Layout title="Mikael Röthig | Home">
@@ -29,6 +37,25 @@ import ContactForm from "../components/ContactForm.astro";
     </div>
 
     <Experience />
-    <Stack/>
+    <Stack heading="My Tech Stack" viewAllButton>
+        <StackEntry href="https://www.php.net/" heading="PHP" subheading="Lorem ipsum">
+            <CSS tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+        </StackEntry>
+        <StackEntry href="https://learn.microsoft.com/en-us/dotnet/csharp/" heading="C#" subheading="Lorem ipsum">
+            <CSharp tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+        </StackEntry>
+        <StackEntry href="https://astro.build/" heading="Astro" subheading="Lorem ipsum">
+            <AstroJS tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+        </StackEntry>
+        <StackEntry href="https://sulu.io/" heading="Sulu" subheading="Lorem ipsum">
+            <Sulu tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+        </StackEntry>
+        <StackEntry href="https://developer.mozilla.org/en-US/docs/Web/HTML" heading="HTML" subheading="Lorem ipsum">
+            <HTML tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+        </StackEntry>
+        <StackEntry href="https://tailwindcss.com/" heading="Tailwind CSS" subheading="Lorem ipsum">
+            <TailwindCSS tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+        </StackEntry>
+    </Stack>
     <ContactForm/>
 </Layout>
