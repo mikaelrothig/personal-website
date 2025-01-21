@@ -1,7 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Button from '../components/Button.astro';
-import Copy from "../assets/icons/Copy.astro";
 import Experience from "../components/Experience.astro";
 import TechStack from "../components/stack/Stack.astro";
 import ContactForm from "../components/ContactForm.astro";
@@ -12,6 +11,7 @@ import AstroJS from "../assets/logos/AstroJS.astro";
 import CSharp from "../assets/logos/CSharp.astro";
 import Sulu from "../assets/logos/Sulu.astro";
 import Php from "../assets/logos/Php.astro";
+import Envelope from "../assets/icons/Envelope.astro";
 ---
 
 <Layout title="Mikael Röthig | Home">
@@ -29,8 +29,8 @@ import Php from "../assets/logos/Php.astro";
         <div class="flex gap-x-2 pt-4">
             <Button href="/about" label="About me" color="button-primary"/>
 
-            <Button href="/" label="Email" color="button-secondary">
-                <Copy height="16" width="16" tailwindAttr="fill-text-secondary"/>
+            <Button href="mailto:mrrothig@gmail.com" label="Send a mail" color="button-secondary">
+                <Envelope height="16" width="16" tailwindAttr="fill-text-secondary"/>
             </Button>
         </div>
     </div>
