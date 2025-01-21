@@ -7,6 +7,8 @@ const { title } = Astro.props;
 
 import '@fontsource-variable/inter';
 import '../styles/tailwind.css';
+
+import { ViewTransitions } from "astro:transitions";
 ---
 
 <html lang="en">
@@ -17,6 +19,7 @@ import '../styles/tailwind.css';
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
+        <ViewTransitions/>
     </head>
     <body class="relative bg-primary-darker antialiased">
         <main class="px-6 max-w-[680px] h-screen mx-auto flex items-center">

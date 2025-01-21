@@ -13,7 +13,7 @@ const { href, heading, subheading, image, imageAlt, tags, newTab} = Astro.props;
 ---
 
 <div class="h-60 relative z-10">
-    <a href={href} target={newTab ? "_blank" : "_self"} class="relative overflow-y-auto group">
+    <a href={href} target={newTab ? "_blank" : "_self"} class="overflow-y-auto group">
         <div class="absolute z-10 p-4 bottom-0 left-0 space-y-2">
             <h2>{heading}</h2>
             <p class="hidden sm:block text-sm">
