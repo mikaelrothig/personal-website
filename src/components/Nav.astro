@@ -13,7 +13,6 @@ const currentPage = Astro.url.pathname;
             <div class="flex mt-auto md:mt-0 h-fit md:block p-1.5 rounded-full border border-primary-lighter bg-primary backdrop-blur space-x-2 md:space-x-0 space-y-0 md:space-y-2 pointer-events-auto shadow">
                 <a href="/"
                    class={`flex p-2 rounded-full transition-colors duration-200 ${currentPage === '/' ? 'bg-accent-hover/10' : 'hover:bg-primary-lighter'} group`}
-                   data-astro-reload
                 >
                     <House
                         width="16"
@@ -25,7 +24,6 @@ const currentPage = Astro.url.pathname;
 
                 <a href="/projects"
                    class={`flex p-2 rounded-full transition-colors duration-200 ${currentPage === '/projects' ? 'bg-accent-hover/10' : 'hover:bg-primary-lighter'} group`}
-                   data-astro-reload
                 >
                     <Code
                         width="16"
@@ -37,7 +35,6 @@ const currentPage = Astro.url.pathname;
 
                 <a href="/stack"
                    class={`flex p-2 rounded-full transition-colors duration-200 ${currentPage === '/stack' ? 'bg-accent-hover/10' : 'hover:bg-primary-lighter'} group`}
-                   data-astro-reload
                 >
                     <Stack
                         width="16"
@@ -49,7 +46,6 @@ const currentPage = Astro.url.pathname;
 
                 <a href="/about"
                    class={`flex p-2 rounded-full transition-colors duration-200 ${currentPage === '/about' ? 'bg-accent-hover/10' : 'hover:bg-primary-lighter'} group`}
-                   data-astro-reload
                 >
                     <UserCircle
                         width="16"
