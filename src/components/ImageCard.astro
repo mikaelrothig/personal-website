@@ -26,7 +26,7 @@ const { href, heading, subheading, image, imageAlt, tags, newTab} = Astro.props;
             )}
         </div>
 
-        <img class="rounded-lg object-cover h-full w-full brightness-90 group-hover:brightness-100" src={image} alt={imageAlt} />
-        <div class="absolute rounded-lg inset-0 bg-gradient-to-t from-primary/90 via-primary/60 to-transparent transition-all group-hover:outline group-hover:outline-4 outline-primary-lighter duration-200"/>
+        <img class="rounded-lg object-cover h-full w-full brightness-90 md:group-hover:brightness-100" src={image} alt={imageAlt} />
+        <div class="absolute rounded-lg inset-0 bg-gradient-to-t from-primary/90 via-primary/60 to-transparent transition-all md:group-hover:outline md:group-hover:outline-4 outline-primary-lighter duration-200"/>
     </a>
 </div>
