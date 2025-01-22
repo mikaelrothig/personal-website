@@ -34,4 +34,9 @@
     .button-secondary {
         @apply bg-primary-lighter hover:bg-primary-lighter-hover text-text-secondary;
     }
+
+    /*Mac autofill icon*/
+    input:not(input:-webkit-autofill)::-webkit-contacts-auto-fill-button {
+        background-color: #8C9BAB;
+    }
 }
