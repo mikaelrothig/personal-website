@@ -8,7 +8,7 @@
     }
 
     h1 {
-        @apply pb-4 text-2xl font-medium text-text-primary;
+        @apply pb-4 text-2xl font-bold text-text-primary;
     }
 
     h2 {
