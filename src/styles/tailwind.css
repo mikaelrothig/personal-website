@@ -35,6 +35,15 @@
         @apply bg-primary-lighter hover:bg-primary-lighter-hover text-text-secondary;
     }
 
+    /*Remove white background on Webkit browsers*/
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active  {
+        transition: background-color 5000s;
+        -webkit-text-fill-color: #8C9BAB !important;
+    }
+
     /*Mac autofill icon*/
     input:not(input:-webkit-autofill)::-webkit-contacts-auto-fill-button {
         background-color: #8C9BAB;
