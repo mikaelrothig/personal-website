@@ -6,48 +6,51 @@ import LinkedinLogo from "../assets/icons/LinkedinLogo.astro";
 import GithubLogo from "../assets/icons/GithubLogo.astro";
 import InstagramLogo from "../assets/icons/InstagramLogo.astro";
 
-import ImageOne from "../../src/assets/images/about-me-1.webp"
+import ImageOne from "../assets/images/about-me-1.webp"
 import ImageTwo from "../../src/assets/images/about-me-2.webp"
 import ImageThree from "../../src/assets/images/about-me-3.webp"
 ---
 
 <Layout title="Mikael Röthig | Contact">
-    <div>
-        <h1>
-            A bit about me...
-        </h1>
-        <p class="text-sm pb-4">
-            I'm a software developer with a passion for crafting user-friendly experiences. I excel in front-end
-            development, bringing clean code and visually appealing designs to life, ensuring a seamless and engaging
-            user journey across all devices.
-        </p>
+    <div class="space-y-4">
+        <div>
+            <h1>
+                About me
+            </h1>
+            <p class="text-sm">
+                I'm a software developer who excels in front-end development. I bring clean code and visually appealing
+                designs to life, ensuring a seamless and engaging user journey across all devices.
+            </p>
+        </div>
 
-        <p class="text-sm pb-4">
-            My experience includes developing a multi-language lead generation
-            site utilizing Sulu, Tailwind CSS, and Stimulus JS, demonstrating my proficiency in front-end technologies
-            like JavaScript, TypeScript, and HTML/CSS. I also contributed to the maintenance of a large e-commerce
-            platform, ensuring data accuracy and site performance. These projects honed my skills in frameworks like
-            Symfony and Shopware, and deepened my understanding of best practices in web development.
-        </p>
-
-        <div class="grid grid-cols-5 gap-4 pb-4">
-            <div class="col-span-2">
-                <img class="rounded-lg object-cover h-full w-full brightness-90" src={ImageOne.src} alt="Me in the ocean" />
-            </div>
-            <div class="col-span-3 grid grid-rows-2 gap-4">
-                <img class="rounded-lg object-cover h-full w-full brightness-90" src={ImageTwo.src} alt="Me sitting on a rock" />
-                <img class="rounded-lg object-cover h-full w-full brightness-90" src={ImageThree.src} alt="Me kitesurfing" />
-            </div>
-
+        <div class="overflow-hidden rounded-lg h-60">
+            <img class="rounded-lg object-cover h-full w-full brightness-90 md:hover:scale-105 transition-all duration-200" src={ImageOne.src} alt="Me in the ocean" />
         </div>
 
         <p class="text-sm">
-            Outside of work, I enjoy staying active and being outdoors. I have a passion for football and a love for
-            water sports, particularly kitesurfing. I love to travel and am always up for new experiences. These
-            passions fuel my creativity and drive to build innovative solutions in the tech industry.
+            My experience includes developing a multi-language lead generation site utilizing Sulu, Tailwind CSS, and
+            Stimulus JS, demonstrating my proficiency in front-end technologies like JavaScript, TypeScript, and
+            HTML/CSS. I also contributed to the maintenance of a large e-commerce platform, ensuring data accuracy and
+            site performance. These projects honed my skills in frameworks like Symfony and Shopware, and deepened my
+            understanding of best practices in web development.
         </p>
 
-        <div class="flex flex-wrap gap-2 pt-4">
+        <div class="grid sm:grid-cols-2 gap-4">
+            <div class="overflow-hidden rounded-lg h-60">
+                <img class="object-cover h-full w-full brightness-90 md:hover:scale-105 transition-all duration-200" src={ImageTwo.src} alt="Me sitting on a rock" />
+            </div>
+            <div class="overflow-hidden rounded-lg h-60">
+                <img class="rounded-lg object-cover h-full w-full brightness-90 md:hover:scale-105 transition-all duration-200" src={ImageThree.src} alt="Me kitesurfing" />
+            </div>
+        </div>
+
+        <p class="text-sm">
+            Outside of work, I enjoy staying active and being outdoors. I have a love for football and enjoy water
+            sports, particularly kitesurfing. I love to travel and am always up for new experiences. These passions
+            fuel my creativity and drive to build innovative solutions in the tech industry.
+        </p>
+
+        <div class="flex flex-wrap gap-2">
             <Button href="https://www.linkedin.com/in/mikael-r%C3%B6thig-104227185/" label="LinkedIn" color="button-secondary" newTab>
                 <LinkedinLogo height="16" width="16" tailwindAttr="fill-text-secondary"/>
             </Button>
