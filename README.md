@@ -8,7 +8,7 @@
   Personal website built with <a href="https://astro.build/" target="_blank">Astro</a> and <a href="https://tailwindcss.com/" target="_blank">Tailwind</a>. Deployed with <a href="https://vercel.com/" target="_blank">Vercel</a> 
 </p>
 
-![demo](https://raw.githubusercontent.com/MikaelRothig/PortfolioWebsite/src/assets/images/demo.png)
+![demo](https://raw.githubusercontent.com/MikaelRothig/PortfolioWebsite/main/src/assets/images/demo.png)
 
 ## 📟 Commands
 
