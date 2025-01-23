@@ -1,4 +1,14 @@
-# Portfolio Website
+<div align="center">
+  <img alt="Logo" src="https://raw.githubusercontent.com/MikaelRothig/PortfolioWebsite/main/public/favicon.svg" width="100" />
+</div>
+<h1 align="center">
+  mikaelrothig.com
+</h1>
+<p align="center">
+  Personal website built with <a href="https://astro.build/" target="_blank">Astro</a> and <a href="https://tailwindcss.com/" target="_blank">Tailwind</a>. Deployed with <a href="https://vercel.com/" target="_blank">Vercel</a> 
+</p>
+
+![demo](https://raw.githubusercontent.com/MikaelRothig/PortfolioWebsite/src/assets/images/demo.png)
 
 ## 📟 Commands
 
