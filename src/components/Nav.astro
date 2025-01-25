@@ -3,51 +3,53 @@ import House from '../assets/icons/House.astro';
 import Code from '../assets/icons/Code.astro';
 import Stack from '../assets/icons/Stack.astro';
 import UserCircle from '../assets/icons/UserCircle.astro';
+
+const CurrentPage = Astro.url.pathname;
 ---
 <header class="sticky inset-0 z-50">
     <div class="absolute z-20 pointer-events-none">
         <div class="flex p-4 justify-center md:items-center w-screen md:w-fit h-screen">
             <div class="flex mt-auto md:mt-0 h-fit md:block p-1.5 rounded-full border border-primary-lighter bg-primary backdrop-blur space-x-2 md:space-x-0 space-y-0 md:space-y-2 pointer-events-auto shadow">
                 <a href="/"
-                   class={`flex p-2 rounded-full transition-colors duration-200 ${Astro.currentLocale === '/' ? 'bg-accent-hover/10' : 'hover:bg-primary-lighter'} group`}
+                   class={`flex p-2 rounded-full transition-colors duration-200 ${CurrentPage === '/' ? 'bg-accent-hover/10' : 'hover:bg-primary-lighter'} group`}
                 >
                     <House
                         width="16"
                         height="16"
-                        tailwindAttr={`${Astro.currentLocale === '/' ? 'fill-accent' : 'fill-text-secondary'}`}
+                        tailwindAttr={`${CurrentPage === '/' ? 'fill-accent' : 'fill-text-secondary'}`}
                     />
                     <div class="absolute invisible md:visible opacity-0 transition-opacity duration-2000 group-hover:opacity-100 h-fit w-fit translate-x-9 -translate-y-1 px-3 py-1 rounded-full text-nowrap border border-primary-lighter bg-primary text-text-secondary text-xs shadow pointer-events-none">Home</div>
                 </a>
 
                 <a href="/projects"
-                   class={`flex p-2 rounded-full transition-colors duration-200 ${Astro.currentLocale === '/projects/' ? 'bg-accent-hover/10' : 'hover:bg-primary-lighter'} group`}
+                   class={`flex p-2 rounded-full transition-colors duration-200 ${CurrentPage === '/projects' || CurrentPage === '/projects/' ? 'bg-accent-hover/10' : 'hover:bg-primary-lighter'} group`}
                 >
                     <Code
                         width="16"
                         height="16"
-                        tailwindAttr={`${Astro.currentLocale === '/projects/' ? 'fill-accent' : 'fill-text-secondary'}`}
+                        tailwindAttr={`${CurrentPage === '/projects' || CurrentPage === '/projects/' ? 'fill-accent' : 'fill-text-secondary'}`}
                     />
                     <div class="absolute invisible md:visible opacity-0 transition-opacity duration-2000 group-hover:opacity-100 h-fit w-fit translate-x-9 -translate-y-1 px-3 py-1 rounded-full text-nowrap border border-primary-lighter bg-primary text-text-secondary text-xs shadow pointer-events-none">Projects</div>
                 </a>
 
                 <a href="/stack"
-                   class={`flex p-2 rounded-full transition-colors duration-200 ${Astro.currentLocale === '/stack/' ? 'bg-accent-hover/10' : 'hover:bg-primary-lighter'} group`}
+                   class={`flex p-2 rounded-full transition-colors duration-200 ${CurrentPage === '/stack' || CurrentPage === '/stack/' ? 'bg-accent-hover/10' : 'hover:bg-primary-lighter'} group`}
                 >
                     <Stack
                         width="16"
                         height="16"
-                        tailwindAttr={`${Astro.currentLocale === '/stack/' ? 'fill-accent' : 'fill-text-secondary'}`}
+                        tailwindAttr={`${CurrentPage === '/stack' || CurrentPage === '/stack/' ? 'fill-accent' : 'fill-text-secondary'}`}
                     />
                     <div class="absolute invisible md:visible opacity-0 transition-opacity duration-2000 group-hover:opacity-100 h-fit w-fit translate-x-9 -translate-y-1 px-3 py-1 rounded-full text-nowrap border border-primary-lighter bg-primary text-text-secondary text-xs shadow pointer-events-none">Stack</div>
                 </a>
 
                 <a href="/about"
-                   class={`flex p-2 rounded-full transition-colors duration-200 ${Astro.currentLocale === '/about/' ? 'bg-accent-hover/10' : 'hover:bg-primary-lighter'} group`}
+                   class={`flex p-2 rounded-full transition-colors duration-200 ${CurrentPage === '/about' || CurrentPage === '/about/' ? 'bg-accent-hover/10' : 'hover:bg-primary-lighter'} group`}
                 >
                     <UserCircle
                         width="16"
                         height="16"
-                        tailwindAttr={`${Astro.currentLocale === '/about/' ? 'fill-accent' : 'fill-text-secondary'}`}
+                        tailwindAttr={`${CurrentPage === '/about' || CurrentPage === '/about/' ? 'fill-accent' : 'fill-text-secondary'}`}
                     />
                     <div class="absolute invisible md:visible opacity-0 transition-opacity duration-2000 group-hover:opacity-100 h-fit w-fit translate-x-9 -translate-y-1 px-3 py-1 rounded-full text-nowrap border border-primary-lighter bg-primary text-text-secondary text-xs shadow pointer-events-none">About</div>
                 </a>
