@@ -5,9 +5,8 @@ import Stack from '../assets/icons/Stack.astro';
 import UserCircle from '../assets/icons/UserCircle.astro';
 
 const CurrentPage = Astro.url.pathname;
-console.log(CurrentPage);
 ---
-
+<h1>{CurrentPage}</h1>
 <header class="sticky inset-0 z-50">
     <div class="absolute z-20 pointer-events-none">
         <div class="flex p-4 justify-center md:items-center w-screen md:w-fit h-screen">
