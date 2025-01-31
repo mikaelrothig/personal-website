@@ -1,6 +1,6 @@
 ---
 import House from '../assets/icons/House.astro';
-import Code from '../assets/icons/Code.astro';
+import TerminalWindow from "../assets/icons/TerminalWindow.astro";
 import Stack from '../assets/icons/Stack.astro';
 import UserCircle from '../assets/icons/UserCircle.astro';
 
@@ -24,7 +24,7 @@ const CurrentPage = Astro.url.pathname;
                 <a href="/projects"
                    class={`flex p-2 rounded-full transition-colors duration-200 ${CurrentPage === '/projects' || CurrentPage === '/projects/' ? 'bg-accent-hover/10' : 'hover:bg-primary-lighter'} group`}
                 >
-                    <Code
+                    <TerminalWindow
                         width="16"
                         height="16"
                         tailwindAttr={`${CurrentPage === '/projects' || CurrentPage === '/projects/' ? 'fill-accent' : 'fill-text-secondary'}`}
