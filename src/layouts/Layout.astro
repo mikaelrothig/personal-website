@@ -12,6 +12,7 @@ import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
 
 import { ViewTransitions } from "astro:transitions";
+import Analytics from '@vercel/analytics/astro'
 ---
 
 <!doctype html>
@@ -24,6 +25,7 @@ import { ViewTransitions } from "astro:transitions";
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 		<ViewTransitions/>
+		<Analytics/>
 	</head>
 	<body class="bg-primary-darker antialiased">
 		<Nav />
