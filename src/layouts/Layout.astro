@@ -25,7 +25,6 @@ import Analytics from '@vercel/analytics/astro'
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 		<ViewTransitions/>
-		<Analytics/>
 	</head>
 	<body class="bg-primary-darker antialiased">
 		<Nav />
@@ -35,5 +34,6 @@ import Analytics from '@vercel/analytics/astro'
 
 			<Footer />
 		</main>
+		<Analytics/>
 	</body>
 </html>
