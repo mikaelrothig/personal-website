@@ -45,12 +45,26 @@ import Tag from "../components/Tag.astro";
             </div>
         </div>
 
-        <a href="/resume.pdf" target="_blank" class="flex flex-col justify-center items-center p-4 h-44 gap-2 rounded-lg bg-primary transition-all md:hover:outline md:hover:outline-4 outline-primary-lighter duration-200">
-            <p class="text-sm text-text-secondary text-center">Interested in finding out more?</p>
-            <div class="flex">
-                <Tag label="View my Resume"/>
+        <div class="col-span-2 md:col-span-1 p-4 flex flex-col justify-center rounded-lg space-y-2 bg-primary transition-all md:hover:outline md:hover:outline-4 outline-primary-lighter duration-200">
+            <div class="flex md:block">
+                <Tag label="My online presence"/>
             </div>
-        </a>
+
+            <div class="grid grid-col gap-2">
+                <a href="https://www.linkedin.com/in/mikael-r%C3%B6thig-104227185/" target="_blank" class="button-secondary flex items-center justify-center gap-2 px-4 py-1.5 rounded-lg text-sm transition duration-200">
+                    <LinkedinLogo height="16" width="16" tailwindAttr="fill-text-secondary"/>
+                    Linkedin
+                </a>
+                <a href="https://github.com/MikaelRothig" target="_blank" class="button-secondary flex items-center justify-center gap-2 px-4 py-1.5 rounded-lg text-sm transition duration-200">
+                    <GithubLogo height="16" width="16" tailwindAttr="fill-text-secondary"/>
+                    Github
+                </a>
+                <a href="https://www.instagram.com/mikaelrothig/" target="_blank" class="button-secondary flex items-center justify-center gap-2 px-4 py-1.5 rounded-lg text-sm transition duration-200">
+                    <InstagramLogo height="16" width="16" tailwindAttr="fill-text-secondary"/>
+                    Instagram
+                </a>
+            </div>
+        </div>
 
         <div class="flex flex-col col-span-2 space-y-2 p-4 sm:h-44 rounded-lg bg-primary transition-all md:hover:outline md:hover:outline-4 outline-primary-lighter duration-200">
             <div class="flex">
@@ -76,26 +90,12 @@ import Tag from "../components/Tag.astro";
             <img class="rounded-lg object-cover h-full w-full brightness-90 md:hover:scale-105 transition-all duration-200" src={ImageOne.src} alt="Me in the ocean" />
         </div>
 
-        <div class="col-span-2 md:col-span-1 p-4 flex flex-col justify-center rounded-lg space-y-2 bg-primary transition-all md:hover:outline md:hover:outline-4 outline-primary-lighter duration-200">
-            <div class="flex md:block">
-                <Tag label="My online presence"/>
+        <a href="/resume.pdf" target="_blank" class="flex flex-col justify-center items-center p-4 h-44 gap-2 rounded-lg bg-primary transition-all md:hover:outline md:hover:outline-4 outline-primary-lighter duration-200">
+            <p class="text-sm text-text-secondary text-center">Interested in finding out more?</p>
+            <div class="flex">
+                <Tag label="View my Resume"/>
             </div>
-
-            <div class="grid grid-col gap-2">
-                <a href="https://www.linkedin.com/in/mikael-r%C3%B6thig-104227185/" target="_blank" class="button-secondary flex items-center justify-center gap-2 px-4 py-1.5 rounded-lg text-sm transition duration-200">
-                    <LinkedinLogo height="16" width="16" tailwindAttr="fill-text-secondary"/>
-                    Linkedin
-                </a>
-                <a href="https://github.com/MikaelRothig" target="_blank" class="button-secondary flex items-center justify-center gap-2 px-4 py-1.5 rounded-lg text-sm transition duration-200">
-                    <GithubLogo height="16" width="16" tailwindAttr="fill-text-secondary"/>
-                    Github
-                </a>
-                <a href="https://www.instagram.com/mikaelrothig/" target="_blank" class="button-secondary flex items-center justify-center gap-2 px-4 py-1.5 rounded-lg text-sm transition duration-200">
-                    <InstagramLogo height="16" width="16" tailwindAttr="fill-text-secondary"/>
-                    Instagram
-                </a>
-            </div>
-        </div>
+        </a>
 
         <div class="col-span-2 md:col-span-3 items-center space-y-2 p-4 md:h-44 rounded-lg bg-primary transition-all md:hover:outline md:hover:outline-4 outline-primary-lighter duration-200">
             <div class="flex">
