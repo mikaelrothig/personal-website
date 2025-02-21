@@ -5,6 +5,7 @@ import Tag from "../components/Tag.astro";
 
 import terrainGeneratorImage from "../assets/images/projects/terrain-generator.webp"
 import personalWebsiteImage from "../assets/images/projects/personal-website.webp"
+import weatherStationDashboardImage from "../assets/images/projects/weather-station-dashboard.webp"
 ---
 
 <Layout title="Mikael Röthig | Projects">
@@ -16,21 +17,21 @@ import personalWebsiteImage from "../assets/images/projects/personal-website.web
     </div>
 
     <ImageCard
-        href="https://github.com/MikaelRothig/TerrainGenerator"
-        heading="Random Terrain Generator"
-        subheading="Hexagon based random terrain generator created using Unity and Blender"
-        image={terrainGeneratorImage.src}
-        imageAlt="Random Terrain Generator image"
+        href="https://github.com/mikaelrothig/weather-station-dashboard-frontend"
+        heading="Weather Station Dashboard"
+        subheading="A dashboard that shows weather data from multiple sources"
+        image={weatherStationDashboardImage.src}
+        imageAlt="Weather Station Dashboard image"
         tags
         newTab
     >
-        <Tag label="C#"/>
-        <Tag label="Unity"/>
-        <Tag label="Blender"/>
+        <Tag label="React"/>
+        <Tag label="Tailwind CSS"/>
+        <Tag label="Figma"/>
     </ImageCard>
 
     <ImageCard
-            href="https://github.com/MikaelRothig/PortfolioWebsite"
+            href="https://github.com/mikaelrothig/personal-website"
             heading="Personal Website"
             subheading="Portfolio website built with Astro and Tailwind"
             image={personalWebsiteImage.src}
@@ -41,5 +42,19 @@ import personalWebsiteImage from "../assets/images/projects/personal-website.web
         <Tag label="Astro"/>
         <Tag label="Tailwind CSS"/>
         <Tag label="Figma"/>
+    </ImageCard>
+
+    <ImageCard
+            href="https://github.com/mikaelrothig/terrain-generator"
+            heading="Random Terrain Generator"
+            subheading="Hexagon based random terrain generator created using Unity and Blender"
+            image={terrainGeneratorImage.src}
+            imageAlt="Random Terrain Generator image"
+            tags
+            newTab
+    >
+        <Tag label="C#"/>
+        <Tag label="Unity"/>
+        <Tag label="Blender"/>
     </ImageCard>
 </Layout>
