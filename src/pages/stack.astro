@@ -29,6 +29,9 @@ import CSharp from "../assets/logos/CSharp.astro";
 import Vercel from "../assets/logos/Vercel.astro";
 import Twig from "../assets/logos/Twig.astro";
 import Scss from "../assets/logos/Scss.astro";
+import React from "../assets/logos/React.astro";
+
+const iconStyling = "w-12 h-12 p-2 rounded-md bg-primary-darker";
 ---
 
 <Layout title="Mikael Röthig | Stack">
@@ -42,88 +45,93 @@ import Scss from "../assets/logos/Scss.astro";
 
     <TechStack heading="Programming Languages">
         <StackEntry href="https://www.php.net/" heading="PHP" subheading="General purpose">
-            <Php tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+            <Php tailwindAttr=`${iconStyling}`/>
         </StackEntry>
         <StackEntry href="https://learn.microsoft.com/en-us/dotnet/csharp/" heading="C#" subheading="General purpose">
-            <CSharp tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+            <CSharp tailwindAttr=`${iconStyling}`/>
         </StackEntry>
         <StackEntry href="https://www.typescriptlang.org/" heading="Typescript" subheading="Javascript extension">
-            <Typescript tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+            <Typescript tailwindAttr=`${iconStyling}`/>
         </StackEntry>
         <StackEntry href="https://www.javascript.com/" heading="Javascript" subheading="Web programming">
-            <Javascript tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+            <Javascript tailwindAttr=`${iconStyling}`/>
         </StackEntry>
         <StackEntry href="https://developer.mozilla.org/en-US/docs/Web/HTML" heading="HTML" subheading="Standard markup language">
-            <HTML tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+            <HTML tailwindAttr=`${iconStyling}`/>
         </StackEntry>
         <StackEntry href="https://developer.mozilla.org/en-US/docs/Web/CSS" heading="CSS" subheading="Style sheets">
-            <CSS tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+            <CSS tailwindAttr=`${iconStyling}`/>
         </StackEntry>
         <StackEntry href="https://sass-lang.com/" heading="SCSS" subheading="CSS extension">
-            <Scss tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+            <Scss tailwindAttr=`${iconStyling}`/>
         </StackEntry>
         <StackEntry href="https://twig.symfony.com/" heading="Twig" subheading="Templating Language">
-            <Twig tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+            <Twig tailwindAttr=`${iconStyling}`/>
         </StackEntry>
     </TechStack>
 
     <TechStack heading="Libraries & Frameworks">
         <StackEntry href="https://symfony.com/" heading="Symfony" subheading="PHP framework">
-            <Symfony tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+            <Symfony tailwindAttr=`${iconStyling}`/>
         </StackEntry>
         <StackEntry href="https://www.shopware.com/" heading="Shopware" subheading="Ecommerce platform">
-            <Shopware tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+            <Shopware tailwindAttr=`${iconStyling}`/>
         </StackEntry>
         <StackEntry href="https://sulu.io/" heading="Sulu" subheading="CMS">
-            <Sulu tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+            <Sulu tailwindAttr=`${iconStyling}`/>
         </StackEntry>
         <StackEntry href="https://gohugo.io/" heading="Hugo" subheading="Static site generator">
-            <Hugo tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+            <Hugo tailwindAttr=`${iconStyling}`/>
         </StackEntry>
         <StackEntry href="https://astro.build/" heading="Astro" subheading="Javascript framework">
-            <AstroJS tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+            <AstroJS tailwindAttr=`${iconStyling}`/>
         </StackEntry>
+
+        <StackEntry href="https://react.dev/" heading="React" subheading="Javascript framework">
+            <React tailwindAttr=`${iconStyling}`/>
+        </StackEntry>
+
         <StackEntry href="https://tailwindcss.com/" heading="Tailwind CSS" subheading="CSS framework">
-            <TailwindCSS tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+            <TailwindCSS tailwindAttr=`${iconStyling}`/>
         </StackEntry>
         <StackEntry href="https://stimulus.hotwired.dev/" heading="Stimulus JS" subheading="Javascript framework">
-            <StimulusJS tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+            <StimulusJS tailwindAttr=`${iconStyling}`/>
         </StackEntry>
     </TechStack>
 
     <TechStack heading="Tools & Software">
         <StackEntry href="https://git-scm.com/" heading="Git" subheading="Version control">
-            <Git tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+            <Git tailwindAttr=`${iconStyling}`/>
         </StackEntry>
         <StackEntry href="https://github.com/" heading="Github" subheading="Version control">
-            <Github tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+            <Github tailwindAttr=`${iconStyling}`/>
         </StackEntry>
         <StackEntry href="https://www.jetbrains.com/webstorm/" heading="WebStorm" subheading="Web development IDE">
-            <WebStorm tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+            <WebStorm tailwindAttr=`${iconStyling}`/>
         </StackEntry>
         <StackEntry href="https://www.jetbrains.com/phpstorm/" heading="PhpStorm" subheading="PHP IDE">
-            <PhpStorm tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+            <PhpStorm tailwindAttr=`${iconStyling}`/>
         </StackEntry>
         <StackEntry href="https://www.figma.com/" heading="Figma" subheading="Design tool">
-            <Figma tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+            <Figma tailwindAttr=`${iconStyling}`/>
         </StackEntry>
         <StackEntry href="https://www.adobe.com/products/xd.html" heading="Adobe XD" subheading="Vector design tool">
-            <AdobeXD tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+            <AdobeXD tailwindAttr=`${iconStyling}`/>
         </StackEntry>
         <StackEntry href="https://www.adobe.com/products/illustrator.html" heading="Adobe Illustrator" subheading="Vector graphics editor">
-            <AdobeIllustrator tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+            <AdobeIllustrator tailwindAttr=`${iconStyling}`/>
         </StackEntry>
         <StackEntry href="https://www.adobe.com/products/photoshop.html" heading="Adobe Photoshop" subheading="Raster graphics editor">
-            <AdobePhotoshop tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+            <AdobePhotoshop tailwindAttr=`${iconStyling}`/>
         </StackEntry>
         <StackEntry href="https://unity.com/" heading="Unity" subheading="Game development">
-            <Unity tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+            <Unity tailwindAttr=`${iconStyling}`/>
         </StackEntry>
         <StackEntry href="https://www.blender.org/" heading="Blender" subheading="3D modeling">
-            <Blender tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+            <Blender tailwindAttr=`${iconStyling}`/>
         </StackEntry>
         <StackEntry href="https://vercel.com/" heading="Vercel" subheading="Deployment">
-            <Vercel tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
+            <Vercel tailwindAttr=`${iconStyling}`/>
         </StackEntry>
     </TechStack>
 </Layout>
