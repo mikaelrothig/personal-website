@@ -1,0 +1,30 @@
+---
+import Tag from "./Tag.astro";
+import CaretRight from "../assets/icons/CaretRight.astro";
+import ImageCard from "./ImageCard.astro";
+
+import weatherStationDashboardImage from "../assets/images/projects/weather-station-dashboard.webp"
+---
+
+<div class="space-y-4">
+    <h2>Featured Project</h2>
+
+    <ImageCard
+            href="https://github.com/mikaelrothig/weather-station-dashboard-frontend"
+            heading="Weather Station Dashboard"
+            subheading="A dashboard that shows weather data from multiple sources"
+            image={weatherStationDashboardImage.src}
+            imageAlt="Weather Station Dashboard image"
+            tags
+            newTab
+    >
+        <Tag label="React"/>
+        <Tag label="Tailwind CSS"/>
+        <Tag label="Figma"/>
+    </ImageCard>
+
+    <a href="/projects" class="flex items-center group w-fit">
+        <p class="text-sm group-hover:text-accent">View my other projects</p>
+        <CaretRight height="14" width="14" tailwindAttr="fill-text-secondary group-hover:fill-accent group-hover:translate-x-0.5 transition-transform duration-200"/>
+    </a>
+</div>

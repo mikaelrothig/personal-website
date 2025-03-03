@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Button from '../components/Button.astro';
 import Experience from "../components/Experience.astro";
+import FeaturedProject from '../components/FeaturedProject.astro';
 import TechStack from "../components/stack/Stack.astro";
 import ContactForm from "../components/ContactForm.astro";
 import StackEntry from "../components/stack/StackEntry.astro";
@@ -41,6 +42,9 @@ import MapPin from "../assets/icons/MapPin.astro";
     </div>
 
     <Experience />
+
+    <FeaturedProject />
+
     <TechStack heading="Technologies I've worked with" viewAllButton>
         <StackEntry href="https://www.php.net/" heading="PHP" subheading="General purpose">
             <Php tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
@@ -61,5 +65,6 @@ import MapPin from "../assets/icons/MapPin.astro";
             <TailwindCSS tailwindAttr="w-12 h-12 p-2 rounded-lg bg-primary-darker"/>
         </StackEntry>
     </TechStack>
+
     <ContactForm/>
 </Layout>

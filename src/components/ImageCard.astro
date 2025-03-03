@@ -1,4 +1,5 @@
 ---
+import ArrowUpRight from "../assets/icons/ArrowUpRight.astro";
 interface Props {
     href: string;
     heading: string;
@@ -7,28 +8,37 @@ interface Props {
     imageAlt: string;
     tags?: boolean;
     newTab?: boolean;
+    isColumn?: boolean;
 }
 
-const { href, heading, subheading, image, imageAlt, tags, newTab} = Astro.props;
+const { href, heading, subheading, image, imageAlt, tags, newTab, isColumn} = Astro.props;
 ---
 
-<div class="relative z-10">
-    <a href={href} target={newTab ? "_blank" : "_self"} class="group">
-        <div class="absolute z-10 p-4 bottom-0 left-0 space-y-2">
-            <h2>{heading}</h2>
-            <p class="hidden sm:block text-sm">
+<a href={href} target={newTab ? "_blank" : "_self"}
+   class={`flex ${isColumn ? "flex-row" : "flex-col"} p-4 gap-4 rounded-lg bg-primary transition-all md:hover:outline md:hover:outline-4 outline-primary-lighter duration-200 group`}>
+
+    <div class={`${isColumn ? "hidden sm:block h-32 w-48" : "h-64"} rounded-md overflow-hidden`}>
+        <img class="object-cover h-full w-full brightness-90 md:group-hover:brightness-100 md:group-hover:scale-105 transition-all duration-200"
+             src={image}
+             alt={imageAlt} />
+    </div>
+
+    <div class="flex flex-col justify-between space-y-2 flex-1">
+        <div>
+            <div class="flex flex-wrap gap-x-1 items-center">
+                <span class="font-medium md:group-hover:text-accent">{heading}</span>
+                <ArrowUpRight height="16" width="16"
+                              tailwindAttr="fill-text-primary md:group-hover:fill-accent md:group-hover:translate-x-1 md:group-hover:-translate-y-1 transition-transform"/>
+            </div>
+            <p class="text-sm">
                 {subheading}
             </p>
-            {tags && (
-                <div class="flex flex-wrap gap-2">
-                    <slot />
-                </div>
-            )}
         </div>
 
-        <div class="h-60 rounded-lg relative overflow-hidden">
-            <img class="rounded-lg object-cover h-full w-full brightness-90 md:group-hover:brightness-100 md:group-hover:scale-105 transition-all duration-200" src={image} alt={imageAlt} />
-        </div>
-        <div class="absolute rounded-lg inset-0 bg-gradient-to-t from-primary/90 via-primary/60 to-transparent transition-all md:group-hover:outline md:group-hover:outline-4 outline-primary-lighter duration-200"/>
-    </a>
-</div>
+        {tags && (
+                <div class="flex flex-wrap gap-2 mt-auto">
+                    <slot />
+                </div>
+        )}
+    </div>
+</a>
