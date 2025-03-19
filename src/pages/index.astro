@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Button from '../components/Button.astro';
 import Experience from "../components/Experience.astro";
 import FeaturedProject from '../components/FeaturedProject.astro';
-import TechStack from "../components/stack/Stack.astro";
+import Stack from "../components/stack/Stack.astro";
 import ContactForm from "../components/ContactForm.astro";
 import StackEntry from "../components/stack/StackEntry.astro";
 import HTML from "../assets/logos/HTML.astro";
@@ -14,14 +14,20 @@ import Sulu from "../assets/logos/Sulu.astro";
 import Php from "../assets/logos/Php.astro";
 import Envelope from "../assets/icons/Envelope.astro";
 import MapPin from "../assets/icons/MapPin.astro";
+
+import ProfilePic from "../assets/images/profile-pic.webp"
 ---
 
 <Layout title="Mikael Röthig">
     <div>
-        <h1 class="pb-4 font-bold">
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-accent-hover">Howzit.</span> I'm Mikael Röthig.<br>
-            <span class="text-text-secondary">Software Developer</span>
-        </h1>
+        <div class="flex items-center gap-x-4 pb-4">
+            <img class="hidden xs:flex rounded-full h-12 w-12 sm:h-14 sm:w-14 border-2 border-accent p-0.5" src={ProfilePic.src} alt="Profile picture" />
+
+            <h1 class="font-bold pb-0">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-accent-hover">Howzit.</span> I'm Mikael Röthig.<br>
+                <span class="text-text-secondary">Software Developer</span>
+            </h1>
+        </div>
 
         <p class="flex gap-x-1 items-center text-sm pb-8">
             <MapPin height="16" width="16" tailwindAttr="stroke-text-secondary"/>
@@ -45,7 +51,7 @@ import MapPin from "../assets/icons/MapPin.astro";
 
     <FeaturedProject />
 
-    <TechStack heading="Technologies I've worked with" viewAllButton>
+    <Stack heading="Technologies I've worked with" viewAllButton>
         <StackEntry href="https://www.php.net/" heading="PHP" subheading="General purpose">
             <Php tailwindAttr="w-12 h-12 p-2 rounded-md bg-primary-darker"/>
         </StackEntry>
@@ -64,7 +70,7 @@ import MapPin from "../assets/icons/MapPin.astro";
         <StackEntry href="https://tailwindcss.com/" heading="Tailwind CSS" subheading="CSS framework">
             <TailwindCSS tailwindAttr="w-12 h-12 p-2 rounded-md bg-primary-darker"/>
         </StackEntry>
-    </TechStack>
+    </Stack>
 
     <ContactForm/>
 </Layout>

@@ -16,6 +16,9 @@ export default {
 
 				'text-primary': '#DEE4EA',
 				'text-secondary':'#8C9BAB',
+			},
+			screens: {
+				xs: '24rem',
 			}
 		},
 		fontFamily: {
