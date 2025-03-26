@@ -1,6 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Button from '../components/Button.astro';
 import Experience from "../components/Experience.astro";
 import FeaturedProject from '../components/FeaturedProject.astro';
 import Stack from "../components/stack/Stack.astro";
@@ -12,40 +11,11 @@ import AstroJS from "../assets/logos/AstroJS.astro";
 import CSharp from "../assets/logos/CSharp.astro";
 import Sulu from "../assets/logos/Sulu.astro";
 import Php from "../assets/logos/Php.astro";
-import Envelope from "../assets/icons/Envelope.astro";
-import MapPin from "../assets/icons/MapPin.astro";
-
-import ProfilePic from "../assets/images/profile-pic.webp"
+import Header from "../components/Header.astro";
 ---
 
 <Layout title="Mikael Röthig">
-    <div>
-        <div class="flex items-center gap-x-4 pb-4">
-            <img class="hidden xs:flex rounded-full h-12 w-12 sm:h-14 sm:w-14 border-2 border-accent p-0.5" src={ProfilePic.src} alt="Profile picture" />
-
-            <h1 class="font-bold pb-0">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-accent-hover">Howzit.</span> I'm Mikael Röthig.<br>
-                <span class="text-text-secondary">Software Developer</span>
-            </h1>
-        </div>
-
-        <p class="flex gap-x-1 items-center text-sm pb-8">
-            <MapPin height="16" width="16" tailwindAttr="stroke-text-secondary"/>
-            Enschede, Netherlands
-        </p>
-
-        <p class="text-sm pb-4">
-            I build user-friendly websites and applications with a focus on clean code and visually appealing designs.
-        </p>
-
-        <div class="flex gap-x-2">
-            <Button href="/about" label="About me" color="button-primary"/>
-
-            <Button href="mailto:mrrothig@gmail.com" label="Send a mail" color="button-secondary">
-                <Envelope height="16" width="16" tailwindAttr="fill-text-secondary"/>
-            </Button>
-        </div>
-    </div>
+    <Header />
 
     <Experience />
 

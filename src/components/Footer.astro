@@ -1,23 +1,59 @@
 ---
-
+import LinkedinLogo from "../assets/icons/LinkedinLogo.astro";
+import GithubLogo from "../assets/icons/GithubLogo.astro";
+import InstagramLogo from "../assets/icons/InstagramLogo.astro";
+import Envelope from "../assets/icons/Envelope.astro";
 ---
 
-<div class="pt-4 pb-24 md:pb-4 space-y-8 border-t border-primary-lighter text-sm">
-    <p>
+<div class="pb-24 md:pb-4 space-y-0.5 text-sm">
+    <p class="bg-primary rounded-tl-lg rounded-tr-lg p-4">
         Designed using
-        <a href="https://figma.com/" target=”_blank” class="text-text-primary hover:text-accent">Figma</a>
+        <a href="https://figma.com/" target=”_blank” class="text-text-primary hover:text-accent transition duration-200">Figma</a>
         and coded in
-        <a href="https://jetbrains.com/webstorm/" target=”_blank” class="text-text-primary hover:text-accent">Webstorm</a>.
+        <a href="https://jetbrains.com/webstorm/" target=”_blank” class="text-text-primary hover:text-accent transition duration-200">Webstorm</a>.
         Built with
-        <a href="https://astro.build/" target=”_blank” class="text-text-primary hover:text-accent">Astro</a>
+        <a href="https://astro.build/" target=”_blank” class="text-text-primary hover:text-accent transition duration-200">Astro</a>
         and
-        <a href="https://tailwindcss.com/" target=”_blank” class="text-text-primary hover:text-accent">Tailwind</a>,
+        <a href="https://tailwindcss.com/" target=”_blank” class="text-text-primary hover:text-accent transition duration-200">Tailwind</a>,
         deployed with
-        <a href="https://vercel.com/" target=”_blank” class="text-text-primary hover:text-accent">Vercel</a>.
+        <a href="https://vercel.com/" target=”_blank” class="text-text-primary hover:text-accent transition duration-200">Vercel</a>.
         All text is set in the
-        <a href="https://fonts.google.com/specimen/Inter" target=”_blank” class="text-text-primary hover:text-accent">Inter</a>
+        <a href="https://fonts.google.com/specimen/Inter" target=”_blank” class="text-text-primary hover:text-accent transition duration-200">Inter</a>
         typeface.
     </p>
 
-    <p class="flex justify-center">{new Date().getFullYear()} - Mikael Röthig</p>
+    <div class="flex gap-x-0.5">
+        <div class="flex flex-grow gap-x-0.5">
+            <a href="https://github.com/mikaelrothig/personal-website" target="_blank" class="flex items-center gap-x-2 py-1.5 px-4 bg-primary rounded-bl-lg text-text-primary hover:text-accent transition duration-200">
+                <div class="relative">
+                    <div class="w-2 h-2 rounded-full bg-accent"/>
+                    <div class="absolute inset-0 w-2 h-2 rounded-full bg-accent opacity-75 animate-ping"></div>
+                </div>
+                v1.0
+            </a>
+
+            <p class="hidden sm:block py-1.5 px-4 bg-primary">
+                {new Date().getFullYear()}
+            </p>
+
+            <div class="flex py-1.5 px-4 bg-primary flex-grow">
+                <p>Mikael Röthig</p>
+            </div>
+        </div>
+
+        <div class="flex gap-x-2 items-center bg-primary rounded-br-lg py-1.5 px-4">
+            <a href="mailto:mrrothig@gmail.com">
+                <Envelope height="16" width="16" tailwindAttr="fill-text-secondary hover:fill-text-primary transition duration-200"/>
+            </a>
+            <a href="https://www.linkedin.com/in/mikael-r%C3%B6thig-104227185/" target="_blank">
+                <LinkedinLogo height="16" width="16" tailwindAttr="fill-text-secondary hover:fill-text-primary transition duration-200"/>
+            </a>
+            <a href="https://github.com/MikaelRothig" target="_blank">
+                <GithubLogo height="16" width="16" tailwindAttr="fill-text-secondary hover:fill-text-primary transition duration-200"/>
+            </a>
+            <a href="https://www.instagram.com/mikaelrothig/" target="_blank">
+                <InstagramLogo height="16" width="16" tailwindAttr="fill-text-secondary hover:fill-text-primary transition duration-200"/>
+            </a>
+        </div>
+    </div>
 </div>
