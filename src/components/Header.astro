@@ -7,7 +7,7 @@ import ProfilePic from "../assets/images/profile-pic.webp"
 import UserCircle from "../assets/icons/UserCircle.astro";
 
 const date = new Date();
-const timezone = 1;
+const timezone = -date.getTimezoneOffset() / 60;
 const timezoneString = `UTC +${String(timezone).padStart(2, '0')}:00`;
 const localTime = `${String((date.getUTCHours() + timezone) % 24).padStart(2, '0')}:${String(date.getUTCMinutes()).padStart(2, '0')}`;
 ---
