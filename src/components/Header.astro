@@ -6,16 +6,10 @@ import Envelope from "../assets/icons/Envelope.astro";
 import ProfilePic from "../assets/images/profile-pic.webp"
 import UserCircle from "../assets/icons/UserCircle.astro";
 
-const date = new Date().toLocaleString('en-US', { timeZone: 'Europe/Amsterdam' });
-const timezone = new Date(date).getTimezoneOffset() / -60;
+const date = new Date();
+const timezone = 2;
 const timezoneString = `UTC +${String(timezone).padStart(2, '0')}:00`;
-
-const localTime = new Date().toLocaleTimeString('en-US', {
-    timeZone: 'Europe/Amsterdam',
-    hour12: false,
-    hour: '2-digit',
-    minute: '2-digit'
-});
+const localTime = `${String((date.getUTCHours() + timezone) % 24).padStart(2, '0')}:${String(date.getUTCMinutes()).padStart(2, '0')}`;
 ---
 
 <div>
