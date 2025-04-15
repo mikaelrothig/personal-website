@@ -1,39 +1,19 @@
 ---
-import ArrowUpRight from "../assets/icons/ArrowUpRight.astro";
-import Tag from "../components/Tag.astro";
 import CaretRight from "../assets/icons/CaretRight.astro";
+import ExperienceEntry from "./experience/ExperienceEntry.astro";
 ---
 
 <div class="space-y-4">
     <h2>Experience</h2>
 
-    <!--PositiveDigits-->
-    <a href="https://positivedigits.com/" target=”_blank” class="grid p-4 gap-y-2 rounded-lg bg-primary transition-all md:hover:outline md:hover:outline-4 outline-primary-lighter duration-200 group">
-        <span class="text-xs text-text-secondary font-semibold">APR 2023 - SEP 2024</span>
-
-        <div class="flex flex-wrap font-medium">
-            <span class="md:group-hover:text-accent">Junior Web Developer</span>
-            <span class="md:group-hover:text-accent">・</span>
-            <span class="flex gap-x-1 items-center md:group-hover:text-accent">
-                PositiveDigits
-                <ArrowUpRight height="16" width="16" tailwindAttr="fill-text-primary md:group-hover:fill-accent md:group-hover:translate-x-1 md:group-hover:-translate-y-1 transition-transform"/>
-            </span>
-        </div>
-        <p class="flex text-sm">
-            Developed a multi-language lead generation site (Sulu, Tailwind CSS, Stimulus JS). Worked in a team to
-            maintain a large e-commerce platform (100,000+ products). Designed & implemented clean front-end solutions.
-        </p>
-        <div class="flex flex-wrap gap-2">
-            <Tag label="PHP"/>
-            <Tag label="HTML"/>
-            <Tag label="Tailwind CSS"/>
-            <Tag label="SCSS"/>
-            <Tag label="Typescript"/>
-            <Tag label="Adobe XD"/>
-            <Tag label="Adobe Illustrator"/>
-            <Tag label="Adobe Photoshop"/>
-        </div>
-    </a>
+    <ExperienceEntry
+            position="Junior Web Developer"
+            company="PositiveDigits"
+            companyWebsite="https://positivedigits.com/"
+            timeSpan="APR 2023 - SEP 2024"
+            description="Developed a multi-language lead generation site (Sulu, Tailwind CSS, Stimulus JS). Worked in a team to maintain a large e-commerce platform (100,000+ products). Designed & implemented clean front-end solutions."
+            tags={["PHP", "HTML", "TailwindCSS", "SCSS", "Typescript", "Adobe XD", "Adobe Illustrator", "Adobe Photoshop"]}
+    />
 
     <a href="/resume.pdf" target="_blank" class="flex items-center group w-fit">
         <p class="text-sm group-hover:text-accent">View Full Resume</p>
