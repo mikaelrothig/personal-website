@@ -6,10 +6,14 @@ import Envelope from "../assets/icons/Envelope.astro";
 import ProfilePic from "../assets/images/profile-pic.webp"
 import UserCircle from "../assets/icons/UserCircle.astro";
 
-const date = new Date();
-const timezone = 2;
-const timezoneString = `UTC +${String(timezone).padStart(2, '0')}:00`;
-const localTime = `${String((date.getUTCHours() + timezone) % 24).padStart(2, '0')}:${String(date.getUTCMinutes()).padStart(2, '0')}`;
+const now = new Date();
+const timezoneOffset = 2;
+const utcTime = now.getTime() + (now.getTimezoneOffset() * 60000);
+const utcPlus2 = new Date(utcTime + (timezoneOffset * 60 * 60 * 1000));
+
+const hours = utcPlus2.getHours();
+const minutes = utcPlus2.getMinutes();
+const timezoneString = `UTC +${String(timezoneOffset).padStart(2, '0')}:00`;
 ---
 
 <div>
@@ -32,7 +36,7 @@ const localTime = `${String((date.getUTCHours() + timezone) % 24).padStart(2, '0
             </span>
             <div class="hidden sm:flex items-center gap-x-1 rounded-br-lg rounded-tr-lg py-1.5 px-4 bg-primary-lighter">
                 <span class="text-text-primary">
-                    {localTime}
+                    {hours}:{minutes}
                 </span>
                 <span class="text-text-secondary">
                     ({timezoneString})
