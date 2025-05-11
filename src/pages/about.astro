@@ -4,8 +4,12 @@ import ContactForm from "../components/ContactForm.astro";
 import LinkedinLogo from "../assets/icons/LinkedinLogo.astro";
 import GithubLogo from "../assets/icons/GithubLogo.astro";
 import InstagramLogo from "../assets/icons/InstagramLogo.astro";
-import ImageOne from "../assets/images/about-me-1.webp"
 import Tag from "../components/Tag.astro";
+
+import Carousel from '../components/react/Carousel.jsx';
+import ImageOne from "../assets/images/about-me-1.webp";
+import ImageTwo from "../assets/images/about-me-2.webp";
+import ImageThree from "../assets/images/about-me-3.webp";
 ---
 
 <Layout title="Mikael Röthig | Contact">
@@ -73,7 +77,14 @@ import Tag from "../components/Tag.astro";
         </div>
 
         <div class="col-span-2 overflow-hidden space-y-2 h-44 rounded-lg bg-primary transition-all md:hover:outline md:hover:outline-4 outline-primary-lighter duration-200">
-            <img class="rounded-lg object-cover h-full w-full brightness-90 md:hover:scale-105 transition-all duration-200" src={ImageOne.src} alt="Me in the ocean" />
+            <Carousel
+                    client:load
+                    images={[
+                        { src: ImageOne.src, alt: "Me in the ocean" },
+                        { src: ImageTwo.src, alt: "Me kitesurfing" },
+                        { src: ImageThree.src, alt: "Me hiking" },
+                    ]}
+            />
         </div>
 
         <div class="col-span-2 md:col-span-1 p-4 flex flex-col justify-center rounded-lg space-y-2 bg-primary transition-all md:hover:outline md:hover:outline-4 outline-primary-lighter duration-200">
