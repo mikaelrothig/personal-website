@@ -17,7 +17,7 @@ const ImageCarousel = ({ images, interval = 5000 }) => {
 
     useEffect(() => {
         startTimer();
-        return () => clearInterval(intervalRef.current); // Clean up on unmount
+        return () => clearInterval(intervalRef.current);
     }, [images.length]);
 
     const goToIndex = (index) => {

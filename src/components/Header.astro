@@ -14,19 +14,19 @@ import UserCircle from "../assets/icons/UserCircle.astro";
 
         <h1 class="font-bold pb-0">
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-accent-hover">Howzit.</span> I'm Mikael Röthig.<br>
-            <span class="text-text-secondary">Software Engineer</span>
+            <span class="text-light-text-primary dark:text-text-secondary">Software Engineer</span>
         </h1>
     </div>
 
     <div class="flex justify-between">
         <div class="flex sm:flex-grow gap-x-0.5 text-sm pb-8">
-            <span class="flex items-center bg-primary rounded-bl-lg rounded-tl-lg py-1.5 px-4">
-                <MapPin height="16" width="16" tailwindAttr="stroke-text-primary"/>
+            <span class="flex items-center bg-light-primary dark:bg-primary rounded-bl-lg rounded-tl-lg py-1.5 px-4">
+                <MapPin height="16" width="16" tailwindAttr="stroke-light-text-primary dark:stroke-text-primary"/>
             </span>
-            <span class="flex flex-grow bg-primary py-1.5 px-4 sm:rounded-br-none sm:rounded-tr-none rounded-br-lg rounded-tr-lg">
+            <span class="flex flex-grow bg-light-primary dark:bg-primary py-1.5 px-4 sm:rounded-br-none sm:rounded-tr-none rounded-br-lg rounded-tr-lg">
                 Groningen, Netherlands
             </span>
-            <div class="hidden sm:flex items-center gap-x-1 rounded-br-lg rounded-tr-lg py-1.5 px-4 bg-primary-lighter">
+            <div class="hidden sm:flex items-center gap-x-1 rounded-br-lg rounded-tr-lg py-1.5 px-4 bg-light-primary-lighter dark:bg-primary-lighter">
                 <LocalTime client:load/>
             </div>
         </div>
@@ -42,7 +42,7 @@ import UserCircle from "../assets/icons/UserCircle.astro";
         </Button>
 
         <Button href="mailto:mrrothig@gmail.com" label="Send a mail" color="button-secondary">
-            <Envelope height="16" width="16" tailwindAttr="fill-text-secondary"/>
+            <Envelope height="16" width="16" tailwindAttr="fill-light-text-secondary dark:fill-text-secondary"/>
         </Button>
     </div>
 </div>

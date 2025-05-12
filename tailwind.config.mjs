@@ -11,11 +11,19 @@ export default {
 				'primary-lighter': '#1D2125',
 				'primary-lighter-hover': '#22272B',
 
+				'light-primary-darker': '#EDEFF1',
+				'light-primary': '#DDE1E4',
+				'light-primary-lighter': '#C9CED2',
+				'light-primary-lighter-hover': '#B4BBC0',
+
 				'accent': '#CBFC01',
 				'accent-hover': '#98C900',
 
 				'text-primary': '#DEE4EA',
 				'text-secondary':'#8C9BAB',
+
+				'light-text-primary': '#101214', //?
+				'light-text-secondary':'#334155', //?
 			},
 			screens: {
 				xs: '24rem',
