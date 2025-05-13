@@ -10,20 +10,20 @@ export default {
 				'primary': '#161A1D',
 				'primary-lighter': '#1D2125',
 				'primary-lighter-hover': '#22272B',
-
-				'light-primary-darker': '#EDEFF1',
-				'light-primary': '#DDE1E4',
-				'light-primary-lighter': '#C9CED2',
-				'light-primary-lighter-hover': '#B4BBC0',
+				'light-primary-darker': '#FDFDFD',
+				'light-primary': '#F3F3F3',
+				'light-primary-lighter': '#E9E9E9',
+				'light-primary-lighter-hover': '#DEDEDE',
 
 				'accent': '#CBFC01',
 				'accent-hover': '#98C900',
+				'light-accent': '#98C900',
+				'light-accent-hover': '#659600',
 
 				'text-primary': '#DEE4EA',
 				'text-secondary':'#8C9BAB',
-
-				'light-text-primary': '#101214', //?
-				'light-text-secondary':'#334155', //?
+				'light-text-primary': '#101214',
+				'light-text-secondary':'#505254',
 			},
 			screens: {
 				xs: '24rem',
