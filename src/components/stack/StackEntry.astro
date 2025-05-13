@@ -8,11 +8,11 @@ interface Props {
 const { href, heading, subheading} = Astro.props;
 ---
 
-<a href={href} class="flex gap-x-4 items-center p-3 rounded-lg bg-primary transition-all md:hover:outline md:hover:outline-4 outline-primary-lighter duration-200" target="_blank">
+<a href={href} class="flex gap-x-4 items-center p-3 rounded-lg bg-light-primary dark:bg-primary transition-all md:hover:outline md:hover:outline-4 outline-light-primary-lighter dark:outline-primary-lighter duration-200" target="_blank">
     <slot />
 
     <div>
-        <p class="text-text-primary">{heading}</p>
+        <p class="text-light-text-primary dark:text-text-primary">{heading}</p>
         <p class="text-sm">{subheading}</p>
     </div>
 </a>
