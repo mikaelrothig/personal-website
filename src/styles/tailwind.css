@@ -28,7 +28,7 @@
     }
 
     .button-primary {
-        @apply bg-accent hover:bg-accent-hover text-primary-darker;
+        @apply bg-light-accent dark:bg-accent hover:bg-light-accent-hover dark:hover:bg-accent-hover text-light-text-primary dark:text-primary-darker;
     }
 
     .button-secondary {

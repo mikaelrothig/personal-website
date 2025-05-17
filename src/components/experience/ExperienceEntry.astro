@@ -18,9 +18,9 @@ const { position, company, companyWebsite, timeSpan, description, tags} = Astro.
     <span class="text-xs text-light-text-secondary dark:text-text-secondary font-semibold">{timeSpan}</span>
 
     <div class="flex flex-wrap font-medium">
-        <span class="md:group-hover:text-accent">{position}</span>
-        <span class="md:group-hover:text-accent">・</span>
-        <span class="flex gap-x-1 items-center md:group-hover:text-accent">
+        <span class="md:group-hover:text-light-accent dark:md:group-hover:text-accent">{position}</span>
+        <span class="md:group-hover:text-light-accent dark:md:group-hover:text-accent">・</span>
+        <span class="flex gap-x-1 items-center md:group-hover:text-light-accent dark:md:group-hover:text-accent">
             {company}
             <ArrowUpRight height="16" width="16" tailwindAttr="fill-light-text-primary dark:fill-text-primary md:group-hover:fill-accent md:group-hover:translate-x-1 md:group-hover:-translate-y-1 transition-transform"/>
         </span>
