@@ -10,23 +10,23 @@ import UserCircle from "../assets/icons/UserCircle.astro";
 
 <div>
     <div class="flex items-center gap-x-4 pb-4">
-        <img class="hidden xs:flex rounded-full h-12 w-12 sm:h-14 sm:w-14 border-2 border-accent p-0.5" src={ProfilePic.src} alt="Profile picture" />
+        <img class="hidden xs:flex rounded-full h-12 w-12 sm:h-14 sm:w-14 border-2 border-light-accent dark:border-accent p-0.5" src={ProfilePic.src} alt="Profile picture" />
 
         <h1 class="font-bold pb-0">
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-accent-hover">Howzit.</span> I'm Mikael Röthig.<br>
-            <span class="text-text-secondary">Software Engineer</span>
+            <span class="text-transparent dark:text-transparent bg-clip-text dark:bg-gradient-to-r bg-light-accent dark:from-accent dark:to-accent-hover">Howzit.</span> I'm Mikael Röthig.<br>
+            <span class="text-light-text-primary dark:text-text-secondary">Software Engineer</span>
         </h1>
     </div>
 
     <div class="flex justify-between">
         <div class="flex sm:flex-grow gap-x-0.5 text-sm pb-8">
-            <span class="flex items-center bg-primary rounded-bl-lg rounded-tl-lg py-1.5 px-4">
-                <MapPin height="16" width="16" tailwindAttr="stroke-text-primary"/>
+            <span class="flex items-center bg-light-primary dark:bg-primary rounded-bl-lg rounded-tl-lg py-1.5 px-4">
+                <MapPin height="16" width="16" tailwindAttr="stroke-light-text-primary dark:stroke-text-primary"/>
             </span>
-            <span class="flex flex-grow bg-primary py-1.5 px-4 sm:rounded-br-none sm:rounded-tr-none rounded-br-lg rounded-tr-lg">
+            <span class="flex flex-grow bg-light-primary dark:bg-primary py-1.5 px-4 sm:rounded-br-none sm:rounded-tr-none rounded-br-lg rounded-tr-lg">
                 Groningen, Netherlands
             </span>
-            <div class="hidden sm:flex items-center gap-x-1 rounded-br-lg rounded-tr-lg py-1.5 px-4 bg-primary-lighter">
+            <div class="hidden sm:flex items-center gap-x-1 rounded-br-lg rounded-tr-lg py-1.5 px-4 bg-light-primary-lighter dark:bg-primary-lighter">
                 <LocalTime client:load/>
             </div>
         </div>
@@ -38,11 +38,11 @@ import UserCircle from "../assets/icons/UserCircle.astro";
 
     <div class="flex gap-x-2">
         <Button href="/about" label="About me" color="button-primary">
-            <UserCircle height="16" width="16" tailwindAttr="fill-primary"/>
+            <UserCircle height="16" width="16" tailwindAttr="fill-text-primary dark:fill-primary"/>
         </Button>
 
         <Button href="mailto:mrrothig@gmail.com" label="Send a mail" color="button-secondary">
-            <Envelope height="16" width="16" tailwindAttr="fill-text-secondary"/>
+            <Envelope height="16" width="16" tailwindAttr="fill-light-text-secondary dark:fill-text-secondary"/>
         </Button>
     </div>
 </div>

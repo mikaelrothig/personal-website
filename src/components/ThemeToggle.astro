@@ -1,0 +1,51 @@
+---
+import Sun from "../assets/icons/Sun.astro";
+import Moon from "../assets/icons/Moon.astro";
+---
+<div>
+    <script>
+        function setTheme(theme: string): void {
+            const root: HTMLElement = document.documentElement;
+            if (theme === 'dark') {
+                root.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                root.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        function setupThemeToggle(): void {
+            const toggle: HTMLElement|null = document.getElementById('theme-toggle');
+            if (!toggle || toggle.dataset.bound === 'true') return;
+
+            toggle.dataset.bound = 'true';
+            toggle.addEventListener('click', (): void => {
+                const isDark: boolean = document.documentElement.classList.contains('dark');
+                setTheme(isDark ? 'light' : 'dark');
+            });
+
+            const savedTheme: string|null = localStorage.getItem('theme');
+            const prefersDark: boolean = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', setupThemeToggle);
+        document.addEventListener('astro:after-swap', setupThemeToggle);
+    </script>
+</div>
+
+<div class="flex mt-auto md:mt-0 h-fit md:block p-1.5 rounded-lg border border-light-primary-lighter dark:border-primary-lighter bg-light-primary dark:bg-primary backdrop-blur space-x-2 md:space-x-0 space-y-0 md:space-y-2 pointer-events-auto shadow">
+    <button id="theme-toggle"
+            class="flex p-2 rounded-md md:hover:bg-light-primary-lighter md:dark:hover:bg-primary-lighter group"
+    >
+        <Sun width="16" height="16" tailwindAttr="block dark:hidden fill-text-secondary" />
+        <Moon width="16" height="16" tailwindAttr="hidden dark:block fill-text-secondary" />
+        <span class="absolute invisible md:visible opacity-0 group-hover:opacity-100 h-fit w-fit translate-x-9 -translate-y-1 px-3 py-1 rounded-md text-nowrap bg-light-primary dark:bg-primary border border-light-primary-lighter dark:border-primary-lighter text-light-text-secondary dark:text-text-secondary text-xs shadow pointer-events-none">Toggle Theme</span>
+    </button>
+</div>

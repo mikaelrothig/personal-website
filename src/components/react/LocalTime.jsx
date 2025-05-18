@@ -47,8 +47,8 @@ const LocalTime = ({ timeZone = 'Europe/Amsterdam' }) => {
 
     return (
         <>
-            <span className="text-text-primary">{time}</span>{' '}
-            <span className="text-text-secondary">{offset}</span>
+            <span>{time}</span>{' '}
+            <span className="text-light-text-secondary dark:text-text-secondary">{offset}</span>
         </>
     );
 };
