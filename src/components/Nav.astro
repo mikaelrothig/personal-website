@@ -13,47 +13,47 @@ const CurrentPage = Astro.url.pathname;
         <div class="flex flex-row md:flex-col p-4 justify-center md:items-center w-screen md:w-fit h-screen gap-2">
             <div class="flex mt-auto md:mt-0 h-fit md:block p-1.5 rounded-lg border border-light-primary-lighter dark:border-primary-lighter bg-light-primary dark:bg-primary backdrop-blur space-x-2 md:space-x-0 space-y-0 md:space-y-2 pointer-events-auto shadow">
                 <a href="/"
-                   class={`flex p-2 rounded-md transition-colors duration-200 ${CurrentPage === '/' ? 'bg-light-accent dark:bg-accent-hover/10' : 'hover:bg-light-primary-lighter dark:hover:bg-primary-lighter'} group`}
+                   class={`flex p-2 rounded-md ${CurrentPage === '/' ? 'bg-light-accent dark:bg-accent-hover/10' : 'md:hover:bg-light-primary-lighter md:dark:hover:bg-primary-lighter'} group`}
                 >
                     <House
                         width="16"
                         height="16"
                         tailwindAttr={`${CurrentPage === '/' ? 'fill-light-text-primary dark:fill-accent' : 'fill-text-secondary'}`}
                     />
-                    <div class="absolute invisible md:visible opacity-0 transition-opacity duration-2000 group-hover:opacity-100 h-fit w-fit translate-x-9 -translate-y-1 px-3 py-1 rounded-lg text-nowrap bg-light-primary dark:bg-primary text-light-text-secondary dark:text-text-secondary text-xs shadow pointer-events-none">Home</div>
+                    <div class="absolute invisible md:visible opacity-0 group-hover:opacity-100 h-fit w-fit translate-x-9 -translate-y-1 px-3 py-1 rounded-lg text-nowrap bg-light-primary dark:bg-primary text-light-text-secondary dark:text-text-secondary text-xs shadow pointer-events-none">Home</div>
                 </a>
 
                 <a href="/projects"
-                   class={`flex p-2 rounded-md transition-colors duration-200 ${CurrentPage === '/projects' || CurrentPage === '/projects/' ? 'bg-light-accent dark:bg-accent-hover/10' : 'hover:bg-light-primary-lighter dark:hover:bg-primary-lighter'} group`}
+                   class={`flex p-2 rounded-md ${CurrentPage === '/projects' || CurrentPage === '/projects/' ? 'bg-light-accent dark:bg-accent-hover/10' : 'md:hover:bg-light-primary-lighter md:dark:hover:bg-primary-lighter'} group`}
                 >
                     <TerminalWindow
                         width="16"
                         height="16"
                         tailwindAttr={`${CurrentPage === '/projects' || CurrentPage === '/projects/' ? 'fill-light-text-primary dark:fill-accent' : 'fill-text-secondary'}`}
                     />
-                    <div class="absolute invisible md:visible opacity-0 transition-opacity duration-2000 group-hover:opacity-100 h-fit w-fit translate-x-9 -translate-y-1 px-3 py-1 rounded-lg text-nowrap bg-light-primary dark:bg-primary text-light-text-secondary dark:text-text-secondary text-xs shadow pointer-events-none">Projects</div>
+                    <div class="absolute invisible md:visible opacity-0 group-hover:opacity-100 h-fit w-fit translate-x-9 -translate-y-1 px-3 py-1 rounded-lg text-nowrap bg-light-primary dark:bg-primary text-light-text-secondary dark:text-text-secondary text-xs shadow pointer-events-none">Projects</div>
                 </a>
 
                 <a href="/stack"
-                   class={`flex p-2 rounded-md transition-colors duration-200 ${CurrentPage === '/stack' || CurrentPage === '/stack/' ? 'bg-light-accent dark:bg-accent-hover/10' : 'hover:bg-light-primary-lighter dark:hover:bg-primary-lighter'} group`}
+                   class={`flex p-2 rounded-md ${CurrentPage === '/stack' || CurrentPage === '/stack/' ? 'bg-light-accent dark:bg-accent-hover/10' : 'md:hover:bg-light-primary-lighter md:dark:hover:bg-primary-lighter'} group`}
                 >
                     <Stack
                         width="16"
                         height="16"
                         tailwindAttr={`${CurrentPage === '/stack' || CurrentPage === '/stack/' ? 'fill-light-text-primary dark:fill-accent' : 'fill-text-secondary'}`}
                     />
-                    <div class="absolute invisible md:visible opacity-0 transition-opacity duration-2000 group-hover:opacity-100 h-fit w-fit translate-x-9 -translate-y-1 px-3 py-1 rounded-lg text-nowrap bg-light-primary dark:bg-primary text-light-text-secondary dark:text-text-secondary text-xs shadow pointer-events-none">Stack</div>
+                    <div class="absolute invisible md:visible opacity-0 group-hover:opacity-100 h-fit w-fit translate-x-9 -translate-y-1 px-3 py-1 rounded-lg text-nowrap bg-light-primary dark:bg-primary text-light-text-secondary dark:text-text-secondary text-xs shadow pointer-events-none">Stack</div>
                 </a>
 
                 <a href="/about"
-                   class={`flex p-2 rounded-md transition-colors duration-200 ${CurrentPage === '/about' || CurrentPage === '/about/' ? 'bg-light-accent dark:bg-accent-hover/10' : 'hover:bg-light-primary-lighter dark:hover:bg-primary-lighter'} group`}
+                   class={`flex p-2 rounded-md ${CurrentPage === '/about' || CurrentPage === '/about/' ? 'bg-light-accent dark:bg-accent-hover/10' : 'md:hover:bg-light-primary-lighter md:dark:hover:bg-primary-lighter'} group`}
                 >
                     <UserCircle
                         width="16"
                         height="16"
                         tailwindAttr={`${CurrentPage === '/about' || CurrentPage === '/about/' ? 'fill-light-text-primary dark:fill-accent' : 'fill-text-secondary'}`}
                     />
-                    <div class="absolute invisible md:visible opacity-0 transition-opacity duration-2000 group-hover:opacity-100 h-fit w-fit translate-x-9 -translate-y-1 px-3 py-1 rounded-lg text-nowrap bg-light-primary dark:bg-primary text-light-text-secondary dark:text-text-secondary text-xs shadow pointer-events-none">About</div>
+                    <div class="absolute invisible md:visible opacity-0 group-hover:opacity-100 h-fit w-fit translate-x-9 -translate-y-1 px-3 py-1 rounded-lg text-nowrap bg-light-primary dark:bg-primary text-light-text-secondary dark:text-text-secondary text-xs shadow pointer-events-none">About</div>
                 </a>
             </div>
 

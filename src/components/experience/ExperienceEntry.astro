@@ -14,7 +14,7 @@ interface Props {
 const { position, company, companyWebsite, timeSpan, description, tags} = Astro.props;
 ---
 
-<a href=`${companyWebsite}` target=”_blank” class="grid p-4 gap-y-2 rounded-lg bg-light-primary dark:bg-primary transition-all md:hover:outline md:hover:outline-4 outline-light-primary-lighter dark:outline-primary-lighter duration-200 group">
+<a href=`${companyWebsite}` target=”_blank” class="grid p-4 gap-y-2 rounded-lg bg-light-primary dark:bg-primary md:hover:outline md:hover:outline-4 outline-light-primary-lighter dark:outline-primary-lighter group">
     <span class="text-xs text-light-text-secondary dark:text-text-secondary font-semibold">{timeSpan}</span>
 
     <div class="flex flex-wrap font-medium">
@@ -22,7 +22,7 @@ const { position, company, companyWebsite, timeSpan, description, tags} = Astro.
         <span class="md:group-hover:text-light-accent dark:md:group-hover:text-accent">・</span>
         <span class="flex gap-x-1 items-center md:group-hover:text-light-accent dark:md:group-hover:text-accent">
             {company}
-            <ArrowUpRight height="16" width="16" tailwindAttr="fill-light-text-primary dark:fill-text-primary md:group-hover:fill-accent md:group-hover:translate-x-1 md:group-hover:-translate-y-1 transition-transform"/>
+            <ArrowUpRight height="16" width="16" tailwindAttr="fill-light-text-primary dark:fill-text-primary md:group-hover:fill-accent md:group-hover:translate-x-1 md:group-hover:-translate-y-1"/>
         </span>
     </div>
     <p class="flex text-sm">{description}</p>

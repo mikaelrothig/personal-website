@@ -15,10 +15,10 @@ const { href, heading, subheading, image, imageAlt, tags, newTab, isColumn} = As
 ---
 
 <a href={href} target={newTab ? "_blank" : "_self"}
-   class={`flex ${isColumn ? "flex-row" : "flex-col"} p-4 gap-4 rounded-lg bg-light-primary dark:bg-primary transition-all md:hover:outline md:hover:outline-4 outline-light-primary-lighter dark:outline-primary-lighter duration-200 group`}>
+   class={`flex ${isColumn ? "flex-row" : "flex-col"} p-4 gap-4 rounded-lg bg-light-primary dark:bg-primary md:hover:outline md:hover:outline-4 outline-light-primary-lighter dark:outline-primary-lighter group`}>
 
     <div class={`${isColumn ? "hidden sm:block h-32 w-48" : "h-64"} rounded-md overflow-hidden`}>
-        <img class="object-cover h-full w-full brightness-90 md:group-hover:brightness-100 md:group-hover:scale-105 transition-all duration-200"
+        <img class="object-cover h-full w-full brightness-90 md:group-hover:brightness-100 md:group-hover:scale-105"
              src={image}
              alt={imageAlt} />
     </div>
@@ -28,7 +28,7 @@ const { href, heading, subheading, image, imageAlt, tags, newTab, isColumn} = As
             <div class="flex flex-wrap gap-x-1 items-center">
                 <span class="font-medium md:group-hover:text-light-accent dark:md:group-hover:text-accent">{heading}</span>
                 <ArrowUpRight height="16" width="16"
-                    tailwindAttr="fill-light-text-primary dark:fill-text-primary md:group-hover:fill-accent md:group-hover:translate-x-1 md:group-hover:-translate-y-1 transition-transform"/>
+                    tailwindAttr="fill-light-text-primary dark:fill-text-primary md:group-hover:fill-accent md:group-hover:translate-x-1 md:group-hover:-translate-y-1"/>
             </div>
             <p class="text-sm">
                 {subheading}
