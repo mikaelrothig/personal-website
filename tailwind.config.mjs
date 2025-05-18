@@ -19,7 +19,7 @@ export default {
 				'accent': '#CBFC01',
 				'accent-hover': '#98C900',
 				'light-accent': '#F00048',
-				'light-accent-hover': '#E3003B',
+				'light-accent-hover': '#D7002F',
 
 				'text-primary': '#DEE4EA',
 				'text-secondary':'#8C9BAB',
