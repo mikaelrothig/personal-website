@@ -18,13 +18,15 @@ export default {
 
 				'accent': '#CBFC01',
 				'accent-hover': '#98C900',
-				'light-accent': '#ACFE00',
-				'light-accent-hover': '#9FF100',
+				'light-accent': '#BEEF00',
+				'light-accent-hover': '#B2E300',
 
 				'text-primary': '#DEE4EA',
 				'text-secondary':'#8C9BAB',
+				'text-accent':'#CBFC01',
 				'light-text-primary': '#101214',
 				'light-text-secondary':'#505254',
+				'light-text-accent':'#659600',
 			},
 			screens: {
 				xs: '24rem',
