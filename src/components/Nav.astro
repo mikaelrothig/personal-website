@@ -3,13 +3,14 @@ import House from '../assets/icons/House.astro';
 import TerminalWindow from "../assets/icons/TerminalWindow.astro";
 import Stack from '../assets/icons/Stack.astro';
 import UserCircle from '../assets/icons/UserCircle.astro';
+import ThemeToggle from '../components/ThemeToggle.astro';
 
 const CurrentPage = Astro.url.pathname;
 ---
 
 <header class="sticky inset-0 z-50">
     <div class="absolute z-20 pointer-events-none">
-        <div class="flex p-4 justify-center md:items-center w-screen md:w-fit h-screen">
+        <div class="flex flex-row md:flex-col p-4 justify-center md:items-center w-screen md:w-fit h-screen gap-2">
             <div class="flex mt-auto md:mt-0 h-fit md:block p-1.5 rounded-lg border border-light-primary-lighter dark:border-primary-lighter bg-light-primary dark:bg-primary backdrop-blur space-x-2 md:space-x-0 space-y-0 md:space-y-2 pointer-events-auto shadow">
                 <a href="/"
                    class={`flex p-2 rounded-md transition-colors duration-200 ${CurrentPage === '/' ? 'bg-light-accent dark:bg-accent-hover/10' : 'hover:bg-light-primary-lighter dark:hover:bg-primary-lighter'} group`}
@@ -55,6 +56,8 @@ const CurrentPage = Astro.url.pathname;
                     <div class="absolute invisible md:visible opacity-0 transition-opacity duration-2000 group-hover:opacity-100 h-fit w-fit translate-x-9 -translate-y-1 px-3 py-1 rounded-lg text-nowrap bg-light-primary dark:bg-primary text-light-text-secondary dark:text-text-secondary text-xs shadow pointer-events-none">About</div>
                 </a>
             </div>
+
+            <ThemeToggle client:load />
         </div>
     </div>
 
