@@ -47,7 +47,7 @@ const ImageCarousel = ({ images, interval = 5000 }) => {
                         key={idx}
                         onClick={() => goToIndex(idx)}
                         className={`h-2 w-2 rounded-full hover:scale-125 ${
-                            idx === currentIndex ? 'bg-accent' : 'bg-light-primary-lighter-hover dark:bg-slate-300/10'
+                            idx === currentIndex ? 'bg-light-accent dark:bg-accent' : 'bg-light-primary-lighter-hover dark:bg-slate-300/10'
                         }`}
                     />
                 ))}
