@@ -13,7 +13,7 @@ const CurrentPage = Astro.url.pathname;
         <div class="flex flex-row md:flex-col p-4 justify-center md:items-center w-screen md:w-fit h-screen gap-2">
             <div class="flex mt-auto md:mt-0 h-fit md:block p-1.5 rounded-lg border border-light-primary-lighter dark:border-primary-lighter bg-light-primary dark:bg-primary backdrop-blur space-x-2 md:space-x-0 space-y-0 md:space-y-2 pointer-events-auto shadow">
                 <a href="/"
-                   class={`flex p-2 rounded-md ${CurrentPage === '/' ? 'bg-light-accent/50 dark:bg-accent-hover/10' : 'md:hover:bg-light-primary-lighter md:dark:hover:bg-primary-lighter'} group`}
+                   class={`flex p-2 rounded-md ${CurrentPage === '/' ? 'bg-light-accent/30 dark:bg-accent-hover/10' : 'md:hover:bg-light-primary-lighter md:dark:hover:bg-primary-lighter'} group`}
                 >
                     <House
                         width="16"
@@ -24,7 +24,7 @@ const CurrentPage = Astro.url.pathname;
                 </a>
 
                 <a href="/projects"
-                   class={`flex p-2 rounded-md ${CurrentPage === '/projects' || CurrentPage === '/projects/' ? 'bg-light-accent/50 dark:bg-accent-hover/10' : 'md:hover:bg-light-primary-lighter md:dark:hover:bg-primary-lighter'} group`}
+                   class={`flex p-2 rounded-md ${CurrentPage === '/projects' || CurrentPage === '/projects/' ? 'bg-light-accent/30 dark:bg-accent-hover/10' : 'md:hover:bg-light-primary-lighter md:dark:hover:bg-primary-lighter'} group`}
                 >
                     <TerminalWindow
                         width="16"
@@ -35,7 +35,7 @@ const CurrentPage = Astro.url.pathname;
                 </a>
 
                 <a href="/stack"
-                   class={`flex p-2 rounded-md ${CurrentPage === '/stack' || CurrentPage === '/stack/' ? 'bg-light-accent/50 dark:bg-accent-hover/10' : 'md:hover:bg-light-primary-lighter md:dark:hover:bg-primary-lighter'} group`}
+                   class={`flex p-2 rounded-md ${CurrentPage === '/stack' || CurrentPage === '/stack/' ? 'bg-light-accent/30 dark:bg-accent-hover/10' : 'md:hover:bg-light-primary-lighter md:dark:hover:bg-primary-lighter'} group`}
                 >
                     <Stack
                         width="16"
@@ -46,7 +46,7 @@ const CurrentPage = Astro.url.pathname;
                 </a>
 
                 <a href="/about"
-                   class={`flex p-2 rounded-md ${CurrentPage === '/about' || CurrentPage === '/about/' ? 'bg-light-accent/50 dark:bg-accent-hover/10' : 'md:hover:bg-light-primary-lighter md:dark:hover:bg-primary-lighter'} group`}
+                   class={`flex p-2 rounded-md ${CurrentPage === '/about' || CurrentPage === '/about/' ? 'bg-light-accent/30 dark:bg-accent-hover/10' : 'md:hover:bg-light-primary-lighter md:dark:hover:bg-primary-lighter'} group`}
                 >
                     <UserCircle
                         width="16"
