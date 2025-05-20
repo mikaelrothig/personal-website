@@ -11,6 +11,7 @@ import '../styles/tailwind.css';
 import { ViewTransitions } from "astro:transitions";
 ---
 
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -22,8 +23,20 @@ import { ViewTransitions } from "astro:transitions";
         <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
         <ViewTransitions/>
+
+        <script>
+            (function () {
+                try {
+                    const theme = localStorage.getItem('theme');
+                    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                    if (theme === 'dark' || (!theme && prefersDark)) {
+                        document.documentElement.classList.add('dark');
+                    }
+                } catch (e) {}
+            })();
+        </script>
     </head>
-    <body class="relative bg-primary-darker antialiased">
+    <body class="relative bg-light-primary-darker dark:bg-primary-darker antialiased">
         <main class="px-6 max-w-[680px] h-screen mx-auto flex items-center">
             <slot />
         </main>

@@ -4,35 +4,35 @@
 
 @layer base {
     * {
-        @apply font-inter;
+        @apply font-inter transition-all duration-200;
     }
 
     h1 {
-        @apply pb-4 text-xl sm:text-2xl font-bold text-text-primary;
+        @apply pb-4 text-xl sm:text-2xl font-bold text-light-text-primary dark:text-text-primary;
     }
 
     h2 {
-        @apply font-medium text-text-primary;
+        @apply font-medium text-light-text-primary dark:text-text-primary;
     }
 
     p {
-        @apply text-text-secondary;
+        @apply text-light-text-secondary dark:text-text-secondary;
     }
 
     a {
-        @apply text-text-secondary;
+        @apply text-light-text-secondary dark:text-text-secondary;
     }
 
     span {
-        @apply text-text-primary;
+        @apply text-light-text-primary dark:text-text-primary;
     }
 
     .button-primary {
-        @apply bg-accent hover:bg-accent-hover text-primary-darker;
+        @apply bg-light-accent dark:bg-accent hover:bg-light-accent-hover dark:hover:bg-accent-hover text-text-primary dark:text-primary-darker;
     }
 
     .button-secondary {
-        @apply bg-primary-lighter hover:bg-primary-lighter-hover text-text-secondary;
+        @apply bg-light-primary-lighter  dark:bg-primary-lighter dark:hover:bg-primary-lighter-hover hover:bg-light-primary-lighter-hover text-light-text-secondary dark:text-text-secondary;
     }
 
     /*Remove white background on Webkit browsers*/
