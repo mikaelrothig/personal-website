@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://mikaelrothig.com/</loc>
+    <lastmod>2025-05-28T08:42:14+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://mikaelrothig.com/projects</loc>
+    <lastmod>2025-05-28T08:42:15+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://mikaelrothig.com/stack</loc>
+    <lastmod>2025-05-28T08:42:15+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://mikaelrothig.com/about</loc>
+    <lastmod>2025-05-28T08:42:15+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://mikaelrothig.com/resume.pdf</loc>
+    <lastmod>2025-05-28T08:42:15+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+</urlset>
