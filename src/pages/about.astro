@@ -10,6 +10,13 @@ import Carousel from '../components/react/Carousel.jsx';
 import ImageOne from "../assets/images/about-me-1.webp";
 import ImageTwo from "../assets/images/about-me-2.webp";
 import ImageThree from "../assets/images/about-me-3.webp";
+
+const startDate = new Date('2023-04-01');
+const now = new Date();
+
+const monthsDiff = (now.getFullYear() - startDate.getFullYear()) * 12 + (now.getMonth() - startDate.getMonth());
+const experienceYears = Math.round(monthsDiff / 12);
+const paddedYears = experienceYears.toString().padStart(2, '0');
 ---
 
 <Layout title="Mikael Röthig | Contact">
@@ -43,7 +50,7 @@ import ImageThree from "../assets/images/about-me-3.webp";
         </div>
 
         <div class="flex flex-col gap-2 justify-center p-4 h-44 rounded-lg bg-light-primary dark:bg-primary md:hover:outline md:hover:outline-4 outline-light-primary-lighter dark:outline-primary-lighter">
-            <p class="flex text-transparent dark:text-transparent bg-clip-text bg-gradient-to-br dark:bg-gradient-to-tl from-light-text-secondary dark:from-text-secondary to-light-text-primary dark:to-text-primary text-7xl font-black justify-center">02</p>
+            <p class="flex text-transparent dark:text-transparent bg-clip-text bg-gradient-to-br dark:bg-gradient-to-tl from-light-text-secondary dark:from-text-secondary to-light-text-primary dark:to-text-primary text-7xl font-black justify-center">{paddedYears}</p>
             <div class="flex justify-center">
                 <Tag label="Years experience"/>
             </div>
