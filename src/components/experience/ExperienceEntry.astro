@@ -14,7 +14,7 @@ interface Props {
 const { position, company, companyWebsite, timeSpan, description, tags} = Astro.props;
 ---
 
-<a href=`${companyWebsite}` target=”_blank” class="grid p-4 gap-y-2 rounded-lg bg-light-primary dark:bg-primary md:hover:outline md:hover:outline-4 outline-light-primary-lighter dark:outline-primary-lighter group">
+<a href=`${companyWebsite}` target="_blank" class="grid p-4 gap-y-2 rounded-lg bg-light-primary dark:bg-primary md:hover:outline md:hover:outline-4 outline-light-primary-lighter dark:outline-primary-lighter group">
     <span class="text-xs text-light-text-secondary dark:text-text-secondary font-semibold">{timeSpan}</span>
 
     <div class="flex flex-wrap font-medium">
